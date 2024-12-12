@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Unity.UIWidgets.external;
-using UnityEngine;
 
 namespace Unity.UIWidgets.foundation {
     public delegate void UIWidgetsExceptionHandler(UIWidgetsErrorDetails details);
@@ -198,8 +195,9 @@ namespace Unity.UIWidgets.foundation {
             return library != null ? $"Exception caught by {library}" : "Exception caught";
         }
 
-        public override string toString(DiagnosticLevel minLevel = DiagnosticLevel.info) {
-            return toDiagnosticsNode(style: DiagnosticsTreeStyle.error).toStringDeep(minLevel: minLevel);
+        public override string toString(DiagnosticLevel minLevel = DiagnosticLevel.info)
+        {
+            return ""; //return toDiagnosticsNode(style: DiagnosticsTreeStyle.error).toStringDeep(minLevel: minLevel);
         }
 
         public override DiagnosticsNode toDiagnosticsNode(string name = null,
@@ -303,7 +301,7 @@ namespace Unity.UIWidgets.foundation {
                     )
                 }).ToString());
             
-            D.assert(() => {
+            /*D.assert(() => {
                 IEnumerable<DiagnosticsNode> summaries =
                     LinqUtils<DiagnosticsNode>.WhereList(diagnostics,((DiagnosticsNode node) => node.level == DiagnosticLevel.summary));
                 if (summaries.Count() > 1) {
@@ -336,7 +334,7 @@ namespace Unity.UIWidgets.foundation {
                 ));
                 
                 return new UIWidgetsError(message).ToString();
-            });
+            });*/
         }
         
         public readonly List<DiagnosticsNode> diagnostics;
@@ -370,11 +368,11 @@ namespace Unity.UIWidgets.foundation {
             }
 
             if (_errorCount == 0 || forceReport) {
-                D.logError(new TextTreeRenderer(
-                    wrapWidth: wrapWidth,
-                    wrapWidthProperties: wrapWidth,
-                    maxDescendentsTruncatableNode: 5).render(
-                    details.toDiagnosticsNode(style: DiagnosticsTreeStyle.error)).TrimEnd(), details.exception);   
+                // D.logError(new TextTreeRenderer(
+                //     wrapWidth: wrapWidth,
+                //     wrapWidthProperties: wrapWidth,
+                //     maxDescendentsTruncatableNode: 5).render(
+                //     details.toDiagnosticsNode(style: DiagnosticsTreeStyle.error)).TrimEnd(), details.exception);   
             }
             
             D.logError($"Another exception was thrown: {details.summary}", details.exception);
@@ -395,9 +393,11 @@ namespace Unity.UIWidgets.foundation {
 
         public string toStringShort() => "UIWidgetsError";
 
-        public override string ToString() {
-            TextTreeRenderer renderer = new TextTreeRenderer(wrapWidth: 400000000);
-            return string.Join("\n", LinqUtils<string,DiagnosticsNode>.SelectList(diagnostics,((DiagnosticsNode node) => renderer.render(node).TrimEnd())));
+        public override string ToString()
+        {
+            return "";
+            //TextTreeRenderer renderer = new TextTreeRenderer(wrapWidth: 400000000);
+            //return string.Join("\n", LinqUtils<string,DiagnosticsNode>.SelectList(diagnostics,((DiagnosticsNode node) => renderer.render(node).TrimEnd())));
         }
 
         public static void reportError(UIWidgetsErrorDetails details) {

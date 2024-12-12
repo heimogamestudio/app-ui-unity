@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Unity.UIWidgets.external;
 
 namespace Unity.UIWidgets.foundation {
     public static class CollectionUtils {
@@ -122,7 +121,8 @@ namespace Unity.UIWidgets.foundation {
             if (it == null) {
                 return null;
             }
-            return "{ " + string.Join(", ", LinqUtils<string,T>.SelectList(it,(item => item.ToString()))) + " }";
+            //return "{ " + string.Join(", ", LinqUtils<string,T>.SelectList(it,(item => item.ToString()))) + " }";
+            return "";
         }
         
         public static List<T> CreateRepeatedList<T>(T value, int length) {

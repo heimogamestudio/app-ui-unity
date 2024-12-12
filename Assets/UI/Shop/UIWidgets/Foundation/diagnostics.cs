@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Unity.UIWidgets.external;
 using UnityEngine;
 
 namespace Unity.UIWidgets.foundation {
@@ -629,7 +628,7 @@ namespace Unity.UIWidgets.foundation {
         }
     }
 
-
+  /*
     public class TextTreeRenderer {
         public TextTreeRenderer(
             DiagnosticLevel minLevel = DiagnosticLevel.debug,
@@ -986,7 +985,7 @@ namespace Unity.UIWidgets.foundation {
             return builder.build();
         }
     }
-
+*/
 
     public abstract class DiagnosticsNode {
         protected DiagnosticsNode(
@@ -1198,24 +1197,25 @@ namespace Unity.UIWidgets.foundation {
         ) {
             string result = base.ToString();
             D.assert(style != null);
-            D.assert(() => {
-                if (foundation_._isSingleLine(style)) {
-                    result = toStringDeep(parentConfiguration: parentConfiguration, minLevel: minLevel);
-                }
-                else {
-                    var description = toDescription(parentConfiguration: parentConfiguration);
-                    if (name == null || name.isEmpty() || !showName) {
-                        result = description;
-                    }
-                    else {
-                        result = description.Contains("\n")
-                            ? $"{name}{_separator}\n{description}"
-                            : $"{name}{_separator} {description}";
-                    }
-                }
-
-                return true;
-            });
+            
+            // D.assert(() => {
+            //     if (foundation_._isSingleLine(style)) {
+            //         result = toStringDeep(parentConfiguration: parentConfiguration, minLevel: minLevel);
+            //     }
+            //     else {
+            //         var description = toDescription(parentConfiguration: parentConfiguration);
+            //         if (name == null || name.isEmpty() || !showName) {
+            //             result = description;
+            //         }
+            //         else {
+            //             result = description.Contains("\n")
+            //                 ? $"{name}{_separator}\n{description}"
+            //                 : $"{name}{_separator} {description}";
+            //         }
+            //     }
+            //
+            //     return true;
+            // });
 
             return result;
         }
@@ -1254,26 +1254,31 @@ namespace Unity.UIWidgets.foundation {
             }
         }
 
-        public string toStringDeep(
-            string prefixLineOne = "",
-            string prefixOtherLines = null,
-            TextTreeConfiguration parentConfiguration = null,
-            DiagnosticLevel minLevel = DiagnosticLevel.debug) {
-            string result = "";
-            D.assert(() => {
-                result = new TextTreeRenderer(
-                    minLevel: minLevel,
-                    wrapWidth: 65,
-                    wrapWidthProperties: 65
-                    ).render(
-                    this,
-                    prefixLineOne: prefixLineOne,
-                    prefixOtherLines: prefixOtherLines,
-                    parentConfiguration: parentConfiguration);
+        public string toStringDeep()
+        {
+            return "";
 
-                return true;
-            });
-            return result;
+            //
+            // string prefixLineOne = "",
+            // string prefixOtherLines = null,
+            // TextTreeConfiguration parentConfiguration = null,
+            // DiagnosticLevel minLevel = DiagnosticLevel.debug) {
+            // string result = "";
+            //
+            // D.assert(() => {
+            //     result = new TextTreeRenderer(
+            //         minLevel: minLevel,
+            //         wrapWidth: 65,
+            //         wrapWidthProperties: 65
+            //         ).render(
+            //         this,
+            //         prefixLineOne: prefixLineOne,
+            //         prefixOtherLines: prefixOtherLines,
+            //         parentConfiguration: parentConfiguration);
+            //
+            //     return true;
+            // });
+            // return result;
         }
     }
 
@@ -1647,20 +1652,23 @@ namespace Unity.UIWidgets.foundation {
         ) {
         }
 
-        protected override string valueToString(TextTreeConfiguration parentConfiguration = null) {
-            if (value == null) {
-                return "null";
-            }
+        protected override string valueToString(TextTreeConfiguration parentConfiguration = null)
+        {
 
-            if (!valueT.Any()) {
-                return ifEmpty ?? "[]";
-            }
-
-            if (parentConfiguration != null && !parentConfiguration.lineBreakProperties) {
-               return string.Join(", ", LinqUtils<string, T>.SelectList(valueT, (v => v.ToString())));
-            }
-            return string.Join(style == DiagnosticsTreeStyle.singleLine ? ", " : "\n", 
-                LinqUtils<string, T>.SelectList(valueT,  (v => v.ToString())));
+            return "";
+            // if (value == null) {
+            //     return "null";
+            // }
+            //
+            // if (!valueT.Any()) {
+            //     return ifEmpty ?? "[]";
+            // }
+            //
+            // if (parentConfiguration != null && !parentConfiguration.lineBreakProperties) {
+            //    return string.Join(", ", LinqUtils<string, T>.SelectList(valueT, (v => v.ToString())));
+            // }
+            // return string.Join(style == DiagnosticsTreeStyle.singleLine ? ", " : "\n", 
+            //     LinqUtils<string, T>.SelectList(valueT,  (v => v.ToString())));
         }
 
         public override DiagnosticLevel level {
@@ -1677,9 +1685,9 @@ namespace Unity.UIWidgets.foundation {
 
         public override Dictionary<string, object> toJsonMap(DiagnosticsSerializationDelegate Delegate) {
             var json = base.toJsonMap(Delegate);
-            if (value != null) {
-                json["values"] = LinqUtils<string, T>.SelectList(valueT, (v => v.ToString()));
-            }
+            //if (value != null) {
+            //    json["values"] = LinqUtils<string, T>.SelectList(valueT, (v => v.ToString()));
+            //}
 
             return json;
         }
@@ -2427,19 +2435,19 @@ namespace Unity.UIWidgets.foundation {
             }
 
             string shallowString = "";
-            D.assert(() => {
-                var result = new StringBuilder();
-                result.Append(toString());
-                result.Append(joiner);
-                DiagnosticPropertiesBuilder builder = new DiagnosticPropertiesBuilder();
-                debugFillProperties(builder);
-                result.Append(string.Join(joiner,LinqUtils<string,DiagnosticsNode>.SelectList(
-                    LinqUtils<DiagnosticsNode>.WhereList(builder.properties, (n => !n.isFiltered(minLevel)))
-                    ,(n => n.ToString())))
-                );
-                shallowString = result.ToString();
-                return true;
-            });
+            // D.assert(() => {
+            //     var result = new StringBuilder();
+            //     result.Append(toString());
+            //     result.Append(joiner);
+            //     DiagnosticPropertiesBuilder builder = new DiagnosticPropertiesBuilder();
+            //     debugFillProperties(builder);
+            //     result.Append(string.Join(joiner,LinqUtils<string,DiagnosticsNode>.SelectList(
+            //         LinqUtils<DiagnosticsNode>.WhereList(builder.properties, (n => !n.isFiltered(minLevel)))
+            //         ,(n => n.ToString())))
+            //     );
+            //     shallowString = result.ToString();
+            //     return true;
+            // });
 
             return shallowString;
         }
@@ -2449,10 +2457,11 @@ namespace Unity.UIWidgets.foundation {
             string prefixOtherLines = null,
             DiagnosticLevel minLevel = DiagnosticLevel.debug
         ) {
-            return toDiagnosticsNode().toStringDeep(
-                prefixLineOne: prefixLineOne,
-                prefixOtherLines: prefixOtherLines,
-                minLevel: minLevel);
+            // return toDiagnosticsNode().toStringDeep(
+            //     prefixLineOne: prefixLineOne,
+            //     prefixOtherLines: prefixOtherLines,
+            //     minLevel: minLevel);
+            return "";
         }
 
         public override string toStringShort() {

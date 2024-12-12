@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Unity.AppUI.UI;
+using Unity.UIWidgets.foundation;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-namespace Unity.UIWidgets.foundation
-{
-
-    namespace Unity.UIWidgets.widgets
+    namespace Unity.UIWidgets
     {
 
         public interface TypeMatcher
@@ -23,14 +22,92 @@ namespace Unity.UIWidgets.foundation
             }
         }
 
-        public class RenderObject
+        public abstract class RenderObject
         {
+            private RenderObject Child;
 
+            public abstract void Add(VisualElement visualElement);
+
+            public abstract VisualElement VisualmenteElement();
+            
+            public void AddChild(RenderObject renderObject)
+            {
+                Child = renderObject;
+                //Add(renderObject);
+            }
+        }
+        
+        public class TextRenderObject : RenderObject
+        {
+            private Text VisualElement;
+            
+            public TextRenderObject(string value)
+            {
+                VisualElement = new Text
+                {
+                    text = value
+                };
+            }
+            
+            public string Text
+            {
+                 get => VisualElement.text;
+                 set => VisualElement.text = value;
+            }
+
+
+            public override void Add(VisualElement visualElement)
+            {
+                VisualElement.Add(visualElement);
+            }
+
+            public override VisualElement VisualmenteElement()
+            {
+                return VisualElement;
+            }
+        }
+        
+        
+        public class VisualRenderObject : RenderObject
+        {
+            private VisualElement VisualElement;
+            
+            public VisualRenderObject(VisualElement VisualElement)
+            {
+                this.VisualElement = VisualElement;
+            }
+            
+            public override void Add(VisualElement visualElement)
+            {
+                VisualElement.Add(visualElement);
+            }
+            
+            public override VisualElement VisualmenteElement()
+            {
+                return VisualElement;
+            }
         }
 
+        public class Box : VisualElement
+        {
+            
+        }
+        
         public class RenderBox : RenderObject
         {
+            private Box VisualElement;
+            
+            public override VisualElement VisualmenteElement()
+            {
+                return VisualElement;
+            }
+            
             public Size size { get; set; }
+            
+            public override void Add(VisualElement visualElement)
+            {
+                VisualElement.Add(visualElement);
+            }
         }
 
         public abstract class Widget : CanonicalMixinDiagnosticableTree
@@ -432,20 +509,9 @@ namespace Unity.UIWidgets.foundation
             }
         }
 
-        public abstract class SingleChildRenderObjectWidget : RenderObjectWidget
-        {
-            protected SingleChildRenderObjectWidget(Key key = null, Widget child = null) : base(key: key)
-            {
-                this.child = child;
-            }
 
-            public readonly Widget child;
-
-            public override Element createElement()
-            {
-                return new SingleChildRenderObjectElement(this);
-            }
-        }
+        
+       
 
         public abstract class MultiChildRenderObjectWidget : RenderObjectWidget
         {
@@ -1253,10 +1319,12 @@ namespace Unity.UIWidgets.foundation
                 D.assert(this.slot == null);
                 D.assert(this.depth == 0);
                 D.assert(!this._active);
+                
                 this._parent = parent;
                 this._slot = newSlot;
                 this._depth = this._parent != null ? this._parent.depth + 1 : 1;
                 this._active = true;
+                
                 if (parent != null)
                 {
                     this._owner = parent.owner;
@@ -2960,57 +3028,42 @@ namespace Unity.UIWidgets.foundation
             }
         }
 
-        public abstract class RootRenderObjectElement : RenderObjectElement
+        
+        public abstract class SingleChildRenderObjectWidget : RenderObjectWidget
         {
-            protected RootRenderObjectElement(RenderObjectWidget widget) : base(widget)
+            protected SingleChildRenderObjectWidget(Key key = null, Widget child = null) : base(key: key)
             {
+                this.child = child;
             }
 
-            public void assignOwner(BuildOwner owner)
-            {
-                this._owner = owner;
-            }
+            public readonly Widget child;
 
-            public override void mount(Element parent, object newSlot)
+            public override Element createElement()
             {
-                D.assert(parent == null);
-                D.assert(newSlot == null);
-                base.mount(parent, newSlot);
+                return new SingleChildRenderObjectElement(this);
             }
         }
-
-        public class LeafRenderObjectElement : RenderObjectElement
+        
+        public  class RootVisualRenderObjectWidget : SingleChildRenderObjectWidget
         {
-            public LeafRenderObjectElement(LeafRenderObjectWidget widget) : base(widget)
+            private VisualElement VisualElement;
+
+            public RootVisualRenderObjectWidget(VisualElement visualElement)
             {
+                VisualElement = visualElement;
+            }
+            
+            public override Element createElement()
+            {
+                return new RootRenderObjectElement(this, VisualElement);
             }
 
-            protected override void forgetChild(Element child)
+            public override RenderObject createRenderObject(BuildContext context)
             {
-                D.assert(false);
-            }
-
-            protected override void insertChildRenderObject(RenderObject child, object slot)
-            {
-                D.assert(false);
-            }
-
-            protected override void moveChildRenderObject(RenderObject child, object slot)
-            {
-                D.assert(false);
-            }
-
-            protected override void removeChildRenderObject(RenderObject child)
-            {
-                D.assert(false);
-            }
-
-            public override List<DiagnosticsNode> debugDescribeChildren()
-            {
-                return this.widget.debugDescribeChildren();
+                return new VisualRenderObject(VisualElement);
             }
         }
-
+        
         public class SingleChildRenderObjectElement : RenderObjectElement
         {
             public SingleChildRenderObjectElement(SingleChildRenderObjectWidget widget) : base(widget)
@@ -3053,10 +3106,10 @@ namespace Unity.UIWidgets.foundation
 
             protected override void insertChildRenderObject(RenderObject child, object slot)
             {
-                // var renderObject = (RenderObjectWithChildMixin) this.renderObject;
+                renderObject.AddChild(child);
+                renderObject.Add(child.VisualmenteElement());
                 // D.assert(slot == null);
                 // D.assert(renderObject.debugValidateChild(child));
-                // renderObject.child = child;
                 // D.assert(renderObject == this.renderObject);
             }
 
@@ -3073,7 +3126,54 @@ namespace Unity.UIWidgets.foundation
                 // D.assert(renderObject == this.renderObject);
             }
         }
+        
+        public class RootRenderObjectElement : SingleChildRenderObjectElement
+        {
+            private VisualElement VisualElement;
+            
+            public void AssignOwner(BuildOwner owner) {
+                _owner = owner;
+            }
 
+            public RootRenderObjectElement(SingleChildRenderObjectWidget widget, VisualElement visualElement) : base(widget)
+            {
+               VisualElement = visualElement;
+            }
+        }
+
+        public class LeafRenderObjectElement : RenderObjectElement
+        {
+            public LeafRenderObjectElement(LeafRenderObjectWidget widget) : base(widget)
+            {
+            }
+
+            protected override void forgetChild(Element child)
+            {
+                D.assert(false);
+            }
+
+            protected override void insertChildRenderObject(RenderObject child, object slot)
+            {
+                D.assert(false);
+            }
+
+            protected override void moveChildRenderObject(RenderObject child, object slot)
+            {
+                D.assert(false);
+            }
+
+            protected override void removeChildRenderObject(RenderObject child)
+            {
+                D.assert(false);
+            }
+
+            public override List<DiagnosticsNode> debugDescribeChildren()
+            {
+                return this.widget.debugDescribeChildren();
+            }
+        }
+
+    
         public class MultiChildRenderObjectElement : RenderObjectElement
         {
             public MultiChildRenderObjectElement(MultiChildRenderObjectWidget widget)
@@ -3181,14 +3281,14 @@ namespace Unity.UIWidgets.foundation
         internal class WidgetsD
         {
             public static void debugWidgetBuilderValue(
-                global::Unity.UIWidgets.foundation.Unity.UIWidgets.widgets.Widget widget,
-                global::Unity.UIWidgets.foundation.Unity.UIWidgets.widgets.Widget built)
+                global::Unity.UIWidgets.Widget widget,
+                global::Unity.UIWidgets.Widget built)
             {
                 throw new NotImplementedException();
             }
 
             public static bool debugChildrenHaveDuplicateKeys(MultiChildRenderObjectWidget widget,
-                List<global::Unity.UIWidgets.foundation.Unity.UIWidgets.widgets.Widget> widgetChildren)
+                List<global::Unity.UIWidgets.Widget> widgetChildren)
             {
                 throw new NotImplementedException();
             }
@@ -3209,5 +3309,4 @@ namespace Unity.UIWidgets.foundation
         }
     }
 
-}
 

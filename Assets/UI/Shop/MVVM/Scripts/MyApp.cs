@@ -9,7 +9,7 @@ namespace Unity.UI.Shop
         public MyApp(ShopPage mainPage)
         {
             var panel = new Panel();
-            panel.Add(mainPage);
+            //panel.Add(mainPage);
             this.mainPage = panel;
         }
 

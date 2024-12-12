@@ -1,11 +1,10 @@
 #nullable enable
 
-using System.Collections.Generic;
-using Codice.Client.Common.Connection;
-using Unity.AppUI.UI;
 using UnityEngine.UIElements;
-using Button = Unity.AppUI.UI.Button;
 
+using Unity.UIWidgets;
+
+/*
 public class BuildContext
 {
     
@@ -233,128 +232,76 @@ public class CounterState : State
         };
     }
 }
+*/
+
+
+public class UIText : SingleChildRenderObjectWidget
+{
+    private string Text;
+
+    public UIText(string text)
+    {
+        this.Text = text;
+    }
+
+
+    public override RenderObject createRenderObject(BuildContext context) {
+      
+        return new TextRenderObject(
+            Text
+        );
+    }
+
+
+    public override void updateRenderObject(BuildContext context, RenderObject renderObject) {
+        renderObject = renderObject as TextRenderObject;
+
+        if (renderObject is TextRenderObject textRenderObject)
+        {
+            textRenderObject.Text = Text;
+        }
+    }
+}
 
 
 namespace Unity.UI.Shop
 {
+
+    public class ShopView : VisualElement
+    {
+        private Scope Scope;   
+        
+        public ShopView()
+        {
+            Scope = new Scope(this);
+            Scope.Run(new ShopPage());
+        }
+    }
+    
+    public class Scope : RootVisualRenderObjectWidget
+    {
+        private BuildOwner BuildOwner = new BuildOwner();
+        
+        
+        public void Run(Widget widget)
+        {
+           var element = widget.createElement();
+           var root = createElement() as RootRenderObjectElement;
+           root?.AssignOwner(BuildOwner);
+           element.mount(root, "Root");
+        }
+
+        public Scope(VisualElement visualElement) : base(visualElement)
+        {
+            
+        }
+    }
+    
     public class ShopPage : StatelessWidget
     {
-        private Dictionary<object, Widget> Widgets;
-        private Dictionary<Widget, Element> Elements;
-        private Dictionary<Element, VisualElement> Renders;
-        
-        public void Init()
+        public override Widget build(BuildContext context)
         {
-            Widgets = new Dictionary<object, Widget>();
-            Elements = new Dictionary<Widget, Element>();
-            Renders = new Dictionary<Element, VisualElement>();
-
-            
-            var widget = Build(new BuildContext());
-            RenderWidget(widget);
-        }
-        
-        public void RenderWidget(Widget widget)
-        {
-            var context = new BuildContext();
-            
-            
-            
-
-            if (Elements.TryGetValue(widget, out Element elementRef))
-            {
-                if (elementRef is RenderObjectElement)
-                {
-                    if (widget is RenderObjectWidget<VisualElement> renderWidget)
-                    {
-                        VisualElement visualElement;
-                        Renders.TryGetValue(elementRef, out visualElement);
-                        renderWidget.UpdateRenderObject(context, visualElement); 
-                    }
-                }
-            }
-            else
-            {
-                Widgets.Add(widget.Key, widget);
-                var element = widget.CreateElement();
-                Elements.Add(widget, element);
-
-                if (elementRef is RenderObjectElement)
-                {
-                    if (widget is RenderObjectWidget<VisualElement> renderWidget)
-                    {
-                        var visualElement = renderWidget.CreateRenderObject(context); 
-                        Renders.Add(elementRef, visualElement);
-                        
-                        Add(visualElement);
-                    }
-                }
-            }
-            
-            
-            
-            if (Elements.TryGetValue(widget, out Element elementRef))
-            {
-                if (elementRef is StatefulElement)
-                {
-                    if (widget is RenderObjectWidget<VisualElement> renderWidget)
-                    {
-                        VisualElement visualElement;
-                        Renders.TryGetValue(elementRef, out visualElement);
-                        renderWidget.UpdateRenderObject(context, visualElement); 
-                    }
-                }
-            }
-            else
-            {
-                Widgets.Add(widget.Key, widget);
-                var element = widget.CreateElement();
-                Elements.Add(widget, element);
-
-                if (elementRef is RenderObjectElement)
-                {
-                    if (widget is RenderObjectWidget<VisualElement> renderWidget)
-                    {
-                        var visualElement = renderWidget.CreateRenderObject(context); 
-                        Renders.Add(elementRef, visualElement);
-                        
-                        Add(visualElement);
-                    }
-                }
-            }
-            
-            
-            /*
-            
-            if (widget.CreateElement() render)
-            {
-                render.CreateRenderObject(context);
-            }*/
-            
-            //Add(widget.CreateElement());
-            //Add(m_Button);
-        }
-        
-        public override Widget Build(BuildContext context)
-        {
-            return new UIText
-            {
-                Text = "My Component"
-            };
-        }
-        
-        readonly Text m_Text;
-        readonly Button m_Button;
-        readonly ShopViewModel ViewModel;
-        
-        public ShopPage(ShopViewModel viewModel)
-        {
-            Init();
-        }
-
-        void OnButtonClicked()
-        {
-            ViewModel.IncrementCounter();
+            return new UIText("Hello");
         }
     }
 }
