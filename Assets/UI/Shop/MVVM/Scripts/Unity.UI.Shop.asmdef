@@ -1,0 +1,17 @@
+{
+    "name": "Unity.UI.Shop",
+    "rootNamespace": "Unity.UI.Shop",
+    "references": [
+        "GUID:9c739b017e1d4fdabf06fa2d84a463c3",
+        "GUID:2f101f87087d58f4ba92ca00188e763d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
