@@ -267,7 +267,8 @@ public class UIText : SingleChildRenderObjectWidget
 namespace Unity.UI.Shop
 {
 
-    public class ShopView : VisualElement
+    [UxmlElement]
+    public sealed partial class ShopView : VisualElement
     {
         private Scope Scope;   
         

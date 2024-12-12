@@ -6,10 +6,10 @@ namespace Unity.UI.Shop
 {
     public class MyApp : App
     {
-        public MyApp(ShopPage mainPage)
+        public MyApp(ShopView view)
         {
             var panel = new Panel();
-            //panel.Add(mainPage);
+            panel.Add(view);
             this.mainPage = panel;
         }
 

@@ -6,6 +6,7 @@ using Button = Unity.AppUI.UI.Button;
 
 namespace Unity.AppUI.Samples.MVVMRedux
 {
+    
     public class MainPage : VisualElement
     {
         readonly MainViewModel m_ViewModel;
