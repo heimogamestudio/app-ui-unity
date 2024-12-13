@@ -18,7 +18,7 @@ namespace Unity.UI.Shop
             
             // Add services here
             // Add ViewModels and Views as services
-            builder.services.AddSingleton<ShopPage>();
+            builder.services.AddSingleton<ShopView>();
             builder.services.AddSingleton<ShopViewModel>();
         }
 
