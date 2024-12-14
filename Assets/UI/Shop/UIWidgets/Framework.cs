@@ -6,6 +6,7 @@ using Unity.UIWidgets.foundation;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Button = Unity.AppUI.UI.Button;
+using TextOverflow = UnityEngine.UIElements.TextOverflow;
 
 namespace Unity.UIWidgets
 {
@@ -551,8 +552,130 @@ namespace Unity.UIWidgets
 
         public override RenderObject createRenderObject(BuildContext context)
         {
-            var render = new VisualRenderObject(new VisualElement());
-            render.VisualmenteElement().style.flexDirection = FlexDirection.Row;
+            var visual = new VisualElement();
+            visual.style.flexDirection = FlexDirection.Row;
+            visual.name = "Row";
+            var render = new VisualRenderObject(visual);
+            return render;
+        }
+
+        public override void updateRenderObject(BuildContext context, RenderObject renderObject)
+        {
+            
+        }
+    }
+
+    public class UIStyle 
+    {
+        public StyleEnum<Align> AlignContent;
+        public StyleEnum<Align> AlignItems;
+        public StyleEnum<Align> AlignSelf;
+        public StyleColor BackgroundColor;
+        public StyleBackground BackgroundImage;
+        public StyleBackgroundPosition BackgroundPositionX;
+        public StyleBackgroundPosition BackgroundPositionY;
+        public StyleBackgroundRepeat BackgroundRepeat;
+        public StyleBackgroundSize BackgroundSize;
+        public StyleColor BorderBottomColor;
+        public StyleLength BorderBottomLeftRadius;
+        public StyleLength BorderBottomRightRadius;
+        public StyleFloat BorderBottomWidth;
+        public StyleColor BorderLeftColor;
+        public StyleFloat BorderLeftWidth;
+        public StyleColor BorderRightColor;
+        public StyleFloat BorderRightWidth;
+        public StyleColor BorderTopColor;
+        public StyleLength BorderTopLeftRadius;
+        public StyleLength BorderTopRightRadius;
+        public StyleFloat BorderTopWidth;
+        public StyleLength Bottom;
+        public StyleColor Color;
+        public StyleCursor Cursor;
+        public StyleEnum<DisplayStyle> Display;
+        public StyleLength FlexBasis;
+        public StyleEnum<FlexDirection> FlexDirection;
+        public StyleFloat FlexGrow;
+        public StyleFloat FlexShrink;
+        public StyleEnum<Wrap> FlexWrap;
+        public StyleLength FontSize;
+        public StyleLength Height;
+        public StyleEnum<Justify> JustifyContent;
+        public StyleLength Left;
+        public StyleLength LetterSpacing;
+        public StyleLength MarginBottom;
+        public StyleLength MarginLeft;
+        public StyleLength MarginRight;
+        public StyleLength MarginTop;
+        public StyleLength MaxHeight;
+        public StyleLength MaxWidth;
+        public StyleLength MinHeight;
+        public StyleLength MinWidth;
+        public StyleFloat Opacity;
+        public StyleEnum<Overflow> Overflow;
+        public StyleLength PaddingBottom;
+        public StyleLength PaddingLeft;
+        public StyleLength PaddingRight;
+        public StyleLength PaddingTop;
+        public StyleEnum<Position> Position;
+        public StyleLength Right;
+        public StyleRotate Rotate;
+        public StyleScale Scale;
+        public StyleEnum<TextOverflow> TextOverflow;
+        public StyleTextShadow TextShadow;
+        public StyleLength Top;
+        public StyleTransformOrigin TransformOrigin;
+        public StyleList<TimeValue> TransitionDelay;
+        public StyleList<TimeValue> TransitionDuration;
+        public StyleList<StylePropertyName> TransitionProperty;
+        public StyleList<EasingFunction> TransitionTimingFunction;
+        public StyleTranslate Translate;
+        public StyleColor UnityBackgroundImageTintColor;
+        public StyleEnum<EditorTextRenderingMode> UnityEditorTextRenderingMode;
+        public StyleFont UnityFont;
+        public StyleFontDefinition UnityFontDefinition;
+        public StyleEnum<FontStyle> UnityFontStyleAndWeight;
+        public StyleEnum<OverflowClipBox> UnityOverflowClipBox;
+        public StyleLength UnityParagraphSpacing;
+        public StyleInt UnitySliceBottom;
+        public StyleInt UnitySliceLeft;
+        public StyleInt UnitySliceRight;
+        public StyleFloat UnitySliceScale;
+        public StyleInt UnitySliceTop;
+        public StyleEnum<TextAnchor> UnityTextAlign;
+        public StyleEnum<TextGeneratorType> UnityTextGenerator;
+        public StyleColor UnityTextOutlineColor;
+        public StyleFloat UnityTextOutlineWidth;
+        public StyleEnum<TextOverflowPosition> UnityTextOverflowPosition;
+        public StyleEnum<Visibility> Visibility;
+        public StyleEnum<WhiteSpace> WhiteSpace;
+        public StyleLength Width;
+        public StyleLength WordSpacing;
+        public StyleEnum<ScaleMode> UnityBackgroundScaleMode;
+    }
+    
+    public class VisualWidget : SingleChildRenderObjectWidget
+    {
+        private UIStyle Style;
+
+        public VisualWidget()
+        {
+            
+        }
+        
+        public VisualWidget(UIStyle Style, Widget Child) : base(child:Child)
+        {
+            this.Style = Style;
+        }
+
+        public override RenderObject createRenderObject(BuildContext context)
+        {
+            // ReSharper disable once UseObjectOrCollectionInitializer
+            var visual = new VisualElement();
+            visual.style.backgroundImage = Style.BackgroundImage;
+            visual.style.backgroundColor = Style.BackgroundColor;
+            visual.style.borderBottomColor = Style.BorderBottomColor;
+            visual.style.borderBottomWidth = Style.BorderBottomWidth;
+            var render = new VisualRenderObject(visual);
             return render;
         }
 
@@ -571,8 +694,10 @@ namespace Unity.UIWidgets
 
         public override RenderObject createRenderObject(BuildContext context)
         {
-            var render = new VisualRenderObject(new VisualElement());
-            render.VisualmenteElement().style.flexDirection = FlexDirection.Column;
+            var visual = new VisualElement();
+            visual.style.flexDirection = FlexDirection.Column;
+            visual.name = "Column";
+            var render = new VisualRenderObject(visual);
             return render;
         }
 

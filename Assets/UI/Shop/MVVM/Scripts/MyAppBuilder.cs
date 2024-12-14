@@ -1,4 +1,3 @@
-using System;
 using Unity.AppUI.MVVM;
 using Unity.UIWidgets;
 using UnityEngine;
@@ -8,10 +7,14 @@ namespace Unity.UI.Shop
     public class MyAppBuilder : UIToolkitAppBuilder<MyApp>
     {
         public static BuildOwner BuildOwner = new BuildOwner();
-        
+
+        [SerializeField]
+        private Assets _Assets;
+        public static Assets Assets;
         
         protected override void OnAppInitialized(MyApp app)
         {
+            
             base.OnAppInitialized(app);
             Debug.Log("MyAppBuilder.OnAppInitialized");
         }
@@ -25,6 +28,8 @@ namespace Unity.UI.Shop
         {
             base.OnConfiguringApp(builder);
             Debug.Log("MyAppBuilder.OnConfiguringApp");
+
+            Assets = _Assets;
             
             // Add services here
             // Add ViewModels and Views as services
