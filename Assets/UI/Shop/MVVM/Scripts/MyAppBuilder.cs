@@ -1,14 +1,24 @@
+using System;
 using Unity.AppUI.MVVM;
+using Unity.UIWidgets;
 using UnityEngine;
 
 namespace Unity.UI.Shop
 {
     public class MyAppBuilder : UIToolkitAppBuilder<MyApp>
     {
+        public static BuildOwner BuildOwner = new BuildOwner();
+        
+        
         protected override void OnAppInitialized(MyApp app)
         {
             base.OnAppInitialized(app);
             Debug.Log("MyAppBuilder.OnAppInitialized");
+        }
+
+        private void Update()
+        {
+            BuildOwner.buildScope(Scope.Element, (() => {})); 
         }
 
         protected override void OnConfiguringApp(AppBuilder builder)

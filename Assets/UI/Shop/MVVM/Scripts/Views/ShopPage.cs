@@ -1,8 +1,8 @@
-#nullable enable
-
+using System.Collections.Generic;
 using UnityEngine.UIElements;
 using Unity.UIWidgets;
 using Unity.UIWidgets.foundation;
+using Column = Unity.UIWidgets.Column;
 
 namespace Unity.UI.Shop
 {
@@ -12,29 +12,30 @@ namespace Unity.UI.Shop
         
         public ShopView()
         {
-            Scope = new Scope(this);
+            Scope = new Scope(this, MyAppBuilder.BuildOwner);
             Scope.Run(new CounterPage());
         }
     }
     
     public class Scope : RootVisualRenderObjectWidget
     {
-        private BuildOwner BuildOwner = new BuildOwner();
+        private BuildOwner Owner;
 
+        public static Element Element;
+        
         public void Run(Widget widget)
         {
            var element = widget.createElement();
            var root = createElement() as RootRenderObjectElement;
-           
            root.mount();
-           root?.AssignOwner(BuildOwner);
+           Element = root;
+           root?.AssignOwner(Owner);
            element.mount(root, "Root");
         }
      
-
-        public Scope(VisualElement visualElement) : base(visualElement)
+        public Scope(VisualElement visualElement, BuildOwner owner) : base(visualElement)
         {
-            
+            Owner = owner;
         }
     }
     
@@ -53,10 +54,23 @@ namespace Unity.UI.Shop
             return new CounterPageState();
         }
     }
+    
+    public class CounterNotifier : ValueNotifier<int> {
 
+        public void increment()
+        {
+            value++;
+            notifyListeners();
+        }
+
+        public CounterNotifier(int value) : base(value)
+        {
+        }
+    }
+    
     class CounterPageState : State
     {
-        public ValueNotifier<int> Counter = new ValueNotifier<int>(0);
+        public CounterNotifier Counter = new CounterNotifier(0);
         
         public override void initState()
         {
@@ -70,7 +84,139 @@ namespace Unity.UI.Shop
 
         public override Widget build(BuildContext context)
         {
-            return new UIText("Hello Good!" + Counter.value);
+            return new Row(
+                children: new List<Widget>()
+                {
+                    new UIText("Hello Good!" + Counter.value),
+                    new UIButton("Button!", () =>
+                    {
+                        Counter.increment();
+                    }),
+                    
+                    new Row(
+                        children: new List<Widget>()
+                        {
+                            new UIText("Hello Good!" + Counter.value),
+                            new UIButton("Button!", () =>
+                            {
+                                Counter.increment();
+                            }),
+                   
+                        }
+                    ),
+                    
+                    new Row(
+                        children: new List<Widget>()
+                        {
+                            new UIText("Hello Good!" + Counter.value),
+                            new UIButton("Button!", () =>
+                            {
+                                Counter.increment();
+                            }),
+                   
+                        }
+                    ),
+                    
+                    new Column(
+                        children: new List<Widget>()
+                        {
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                    
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                            
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                    
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                            
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                            
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                            
+                            new Row(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                   
+                                }
+                            ),
+                            new Column(
+                                children: new List<Widget>()
+                                {
+                                    new UIText("Hello Good!" + Counter.value),
+                                    new UIButton("Button!", () =>
+                                    {
+                                        Counter.increment();
+                                    }),
+                                }
+                            ),
+                        }
+                    ),
+                }
+            );
         }
     }
 }
