@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c71952e188404dc42b07e09284da7103
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Animations/Characters/AnimClips/Empty/AnimClip_GetHit.anim
+  uploadId: 714966

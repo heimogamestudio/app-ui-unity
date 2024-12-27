@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afba0dd62e8a8740bdcf56bda058547, type: 3}
+  m_Name: Level1Data
+  m_EditorClassIdentifier: 
+  thumbnail: {fileID: 21300000, guid: d0a5ab6f8b7cc0c449907191ee339dcd, type: 3}
+  levelNumber: 1
+  levelLabel: The Dragon's Lair
+  sceneName: Game
+  m_LocalizedLevelNamePrefix:
+    m_TableReference:
+      m_TableCollectionName: GUID:dade14b2149874cc188fc560cf8f29d8
+    m_TableEntryReference:
+      m_KeyId: 5966988399599616
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_LocalizedLevelSubtitle:
+    m_TableReference:
+      m_TableCollectionName: GUID:dade14b2149874cc188fc560cf8f29d8
+    m_TableEntryReference:
+      m_KeyId: 6117969045217280
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

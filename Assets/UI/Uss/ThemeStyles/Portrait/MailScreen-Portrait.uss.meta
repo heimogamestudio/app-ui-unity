@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5117b17ab599c4891963349c5b9f212c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/UI/Uss/ThemeStyles/Portrait/MailScreen-Portrait.uss
+  uploadId: 714966

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 463065d4f17d1d94d848aa127b94dd43
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Presets/Defaults/DirectionalLight_Default.preset
+  uploadId: 714966

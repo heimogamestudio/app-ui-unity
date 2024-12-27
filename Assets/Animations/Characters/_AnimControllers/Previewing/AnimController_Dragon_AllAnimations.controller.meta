@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f8f36930660e64541b41a970add6cad2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Animations/Characters/_AnimControllers/Previewing/AnimController_Dragon_AllAnimations.controller
+  uploadId: 714966

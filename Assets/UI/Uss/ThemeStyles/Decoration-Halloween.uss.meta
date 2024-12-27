@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 865e2bf18c01b4a69bf9ff24e90723b8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/UI/Uss/ThemeStyles/Decoration-Halloween.uss
+  uploadId: 714966

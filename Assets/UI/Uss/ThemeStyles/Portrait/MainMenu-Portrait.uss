@@ -1,0 +1,18 @@
+.overlay-vfx {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('project://database/Assets/UI/Textures/RenderTextures/coinsVFXRenderTexturePortrait.renderTexture?fileID=8400000&guid=2c9508ec55d364e9b8e114ceb3b73da6&type=2#coinsVFXRenderTexturePortrait');
+}
+
+.background-graphic {
+    display: flex;
+    background-image: url('project://database/Assets/UI/Textures/Misc/HomeScreenBackground.png?fileID=21300000&guid=c1ffb0bb8a98fad48ad921cedaf52e2e&type=3#HomeScreenBackground');
+    width: 415%;
+    height: 105%;
+    right: -182%;
+    bottom: 12%;
+    position: absolute;
+    visibility: visible;
+}

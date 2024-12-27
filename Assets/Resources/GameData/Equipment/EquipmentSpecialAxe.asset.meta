@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 542f628349ff3924b958bab7f15572d0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Resources/GameData/Equipment/EquipmentSpecialAxe.asset
+  uploadId: 714966

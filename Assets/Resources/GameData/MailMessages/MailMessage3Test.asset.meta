@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad908703210383b40a49bebc4e6d038e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Resources/GameData/MailMessages/MailMessage3Test.asset
+  uploadId: 714966

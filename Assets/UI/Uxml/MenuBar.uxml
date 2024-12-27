@@ -1,0 +1,63 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="LevelMeter" src="project://database/Assets/UI/Uxml/LevelMeter.uxml?fileID=9197481963319205126&amp;guid=951c6f09b83134b56adcb84e340309c0&amp;type=3#LevelMeter" />
+    <Style src="project://database/Assets/UI/Uss/Toolbars/MenuBar.uss?fileID=7433441132597879392&amp;guid=5f3f4aad9faf7d041b0a9a826d5baff4&amp;type=3#MenuBar" />
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Base/Colors.uss?fileID=7433441132597879392&amp;guid=d7f86ff563ba646c1aa0ede35fb959c4&amp;type=3#Colors" />
+    <Style src="project://database/Assets/UI/Uss/CustomElements/LevelMeter.uss?fileID=7433441132597879392&amp;guid=852f5efe411924dc0a6f63eadc2994b3&amp;type=3#LevelMeter" />
+    <ui:VisualElement name="menu__screen" picking-mode="Ignore" style="flex-shrink: 0; justify-content: flex-end; width: 100%; height: 100%;">
+        <ui:VisualElement name="menu__container" picking-mode="Ignore" class="menu__container" style="justify-content: flex-end;">
+            <ui:VisualElement name="menu__background" picking-mode="Ignore" class="menu__background">
+                <ui:VisualElement name="menu__safe-area-fill" class="tileable--128px menu__safe-area-fill" />
+            </ui:VisualElement>
+            <ui:VisualElement name="menu__spacer" class="menu__spacer" />
+            <ui:VisualElement name="menu__button-group" picking-mode="Ignore" class="menu__button-group">
+                <ui:Button display-tooltip-when-elided="true" name="menu__home-button" class="menu__button--active cursor-b" style="flex-grow: 0; flex-shrink: 1;">
+                    <ui:VisualElement name="menu-home-icon" picking-mode="Ignore" class="menu__icon--active" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=7899088828675708884&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Main_menu_icon_01&quot;); background-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:Label text="Home" display-tooltip-when-elided="true" name="menu-home-label" picking-mode="Ignore" class="menu__label--active">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5964322869075968)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="menu__char-button" class="menu__button cursor-b">
+                    <ui:VisualElement name="menu-char-icon" picking-mode="Ignore" class="menu__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=7921838834792204216&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Main_menu_icon_02&quot;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0);" />
+                    <ui:Label text="Heroes" display-tooltip-when-elided="true" name="menu-char-label" picking-mode="Ignore" class="menu-label menu__label" style="position: absolute; bottom: 0;">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5964384655368192)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="menu__info-button" class="menu__button cursor-b">
+                    <ui:VisualElement name="menu-info-icon" picking-mode="Ignore" class="menu__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=832231871827974919&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Main_menu_icon_03&quot;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0);" />
+                    <ui:Label text="Resources" display-tooltip-when-elided="true" name="menu-info-label" picking-mode="Ignore" class="menu-label menu__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5964407635959808)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="menu__shop-button" class="menu__button cursor-b">
+                    <ui:VisualElement name="menu-shop-icon" picking-mode="Ignore" class="menu__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=5546219552474026466&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Main_menu_icon_04&quot;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(255, 255, 255, 0);" />
+                    <ui:Label text="Shop" display-tooltip-when-elided="true" name="menu-shop-label" picking-mode="Ignore" class="menu-label menu__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5964432071974912)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="menu__mail-button" class="menu__button cursor-b">
+                    <ui:VisualElement name="menu-mail-icon" picking-mode="Ignore" class="menu__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=2475862303943896879&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Main_menu_icon_05&quot;); background-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:Label text="Mail" display-tooltip-when-elided="true" name="menu-mail-label" enable-rich-text="false" picking-mode="Ignore" class="menu-label menu__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5964450430443520)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:Button>
+                <ui:VisualElement name="menu__current-marker" picking-mode="Ignore" class="menu__current-marker">
+                    <ui:VisualElement name="menu__current-marker-graphic" class="menu__marker-graphic" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="LevelMeter" name="LevelMeter" picking-mode="Ignore" class="level-meter__template-container" style="top: 0; left: 0;" />
+</ui:UXML>

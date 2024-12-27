@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 942cbfbe1cb304c2cabcfe8344fd987f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/AddressableAssetsData/AssetGroups/Schemas/Localization-Asset-Tables-English
+    (en)_ContentUpdateGroupSchema.asset
+  uploadId: 714966

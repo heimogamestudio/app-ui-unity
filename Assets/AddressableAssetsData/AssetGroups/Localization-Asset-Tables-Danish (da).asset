@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Asset-Tables-Danish (da)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Asset-Tables-Danish (da)
+  m_GUID: de3a84d9b0d0046a4abee3a6d6e9a614
+  m_SerializeEntries:
+  - m_GUID: 18de6fc6ea5734d3baabdbd608ec8ce0
+    m_Address: FlagIconTable_da
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-da
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 00976404ed2544761b4f61091df4d125, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2e6c1c298ca7a4911a63e69381f49019, type: 2}
+    - {fileID: 11400000, guid: ae21d1de6d1e3412b9085c07ae5b3c72, type: 2}

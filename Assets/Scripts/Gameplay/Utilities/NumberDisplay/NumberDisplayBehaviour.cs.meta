@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 75ec024d1b836354e85da021bac20ec4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Utilities/NumberDisplay/NumberDisplayBehaviour.cs
+  uploadId: 714966

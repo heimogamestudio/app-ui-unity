@@ -26,7 +26,7 @@ namespace Unity.AppUI.Samples.Navigation
                     this.FindNavController().Navigate(Actions.splash_to_auth);
                 else
                     this.FindNavController().Navigate(Actions.splash_to_home);
-            }).ExecuteLater(3000);
+            }).ExecuteLater(10);
         }
     }
     

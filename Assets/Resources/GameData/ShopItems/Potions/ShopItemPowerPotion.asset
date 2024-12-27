@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee853e58d4807494e8bc9c7de5c2a629, type: 3}
+  m_Name: ShopItemPowerPotion
+  m_EditorClassIdentifier: 
+  m_ItemName: Power Potions
+  m_ItemNameLocalized:
+    m_TableReference:
+      m_TableCollectionName: GUID:dade14b2149874cc188fc560cf8f29d8
+    m_TableEntryReference:
+      m_KeyId: 6199980577513472
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_Icon: {fileID: -3856444077584420230, guid: 68de98d899585b7469e0fb40a0fcbc56, type: 3}
+  m_Cost: 20
+  m_Discount: 0
+  m_PromoBannerText: 
+  m_PromoBannerLocalized:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_ContentValue: 10
+  m_ContentType: 3
+  references:
+    version: 2
+    RefIds: []

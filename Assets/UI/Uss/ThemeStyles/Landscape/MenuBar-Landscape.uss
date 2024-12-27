@@ -1,0 +1,84 @@
+.menu__container {
+    flex-grow: 1;
+    position: absolute;
+    left: -1%;
+    top: 0;
+    height: 100%;
+    justify-content: flex-start;
+    width: 13%;
+    align-items: flex-end;
+}
+
+.menu__button-group {
+    display: flex;
+    opacity: 1;
+    background-color: rgba(191, 0, 255, 0);
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 2%;
+    width: 90%;
+    flex-basis: 74%;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-grow: 1;
+    margin-top: 2%;
+}
+
+.menu__background {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=4566532133591779066&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Main_menu_bg");
+    left: -3%;
+    scale: 1.5 1.25;
+    transform-origin: right;
+}
+
+.level-meter__template-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu__current-marker {
+    position: absolute;
+    left: 0;
+    background-image: none;
+    width: 20%;
+    height: 19.4%;
+    justify-content: flex-start;
+    max-width: 100%;
+    max-height: 100%;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    display: flex;
+    opacity: 1;
+    top: 80%;
+}
+
+.menu__marker-graphic {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-6397406315925729229&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Main_menu_selector");
+    width: 100%;
+    height: 100%;
+    top: -2%;
+}
+
+.menu__safe-area-fill {
+    flex-grow: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: right;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    left: -66%;
+}
+
+.menu__spacer {
+    flex-basis: 26.5%;
+    width: 100%;
+    height: auto;
+}

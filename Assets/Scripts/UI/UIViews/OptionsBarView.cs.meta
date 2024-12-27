@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f31dc55d2ca9e46c7ab6a464cf43fd08
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/UI/UIViews/OptionsBarView.cs
+  uploadId: 714966

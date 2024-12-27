@@ -1,0 +1,48 @@
+.color__text--white {
+    color: rgb(255, 255, 255);
+}
+
+.color__text--gray {
+    color: rgb(108, 108, 108);
+}
+
+.color__text--orange {
+    color: rgb(243, 156, 18);
+}
+
+.color__text--blue {
+    color: rgb(243, 156, 18);
+}
+
+.color__text--light-brown {
+    color: rgb(151, 129, 98);
+}
+
+.color__text--brown {
+    color: rgb(141, 91, 38);
+}
+
+.color__text--dark-brown {
+    color: rgb(118, 80, 39);
+}
+
+.color__background--white {
+    background-color: rgb(255, 255, 255);
+}
+
+.color__background--orange {
+    background-color: rgb(243, 156, 18);
+}
+
+.color__background--blue {
+}
+
+.color__border--clear {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.color__border--white {
+}
+
+.color__border--light-brown {
+}

@@ -2,16 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LevelMeter
   - Water
   - UI
-  - 
+  - VFX
   - 
   - 
   - 
@@ -38,39 +38,33 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3175432485
+    locked: 0
+  - name: Ground
+    uniqueID: 4217560837
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Characters
+    uniqueID: 456875869
+    locked: 0
+  - name: Foreground
+    uniqueID: 12416889
+    locked: 0
+  - name: Refraction
+    uniqueID: 139528637
+    locked: 0
+  - name: VFX
+    uniqueID: 2611411177
+    locked: 0
   m_RenderingLayers:
   - Default
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Light Layer 1 - Light Layer 1
+  - Light Layer 2 - Light Layer 2
+  - Light Layer 3 - Light Layer 3
+  - Light Layer 4 - Light Layer 4
+  - Light Layer 5 - Light Layer 5
+  - Light Layer 6 - Light Layer 6
+  - Light Layer 7 - Light Layer 7

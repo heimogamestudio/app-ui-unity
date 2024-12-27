@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c7b7e13c1820d490ea9f4ca7b18b2c5e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/UI/GameScreen.prefab
+  uploadId: 714966

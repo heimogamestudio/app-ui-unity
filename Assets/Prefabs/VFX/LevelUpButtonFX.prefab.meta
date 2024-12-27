@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aea1c5f4accab4eee8b24098247ac56e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/VFX/LevelUpButtonFX.prefab
+  uploadId: 714966

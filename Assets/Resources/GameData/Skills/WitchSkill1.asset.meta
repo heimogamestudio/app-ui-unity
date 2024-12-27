@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fddff5b150e81254aa5710957259bc91
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Resources/GameData/Skills/WitchSkill1.asset
+  uploadId: 714966

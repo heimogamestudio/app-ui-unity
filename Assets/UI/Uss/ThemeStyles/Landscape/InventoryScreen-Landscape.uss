@@ -1,0 +1,57 @@
+.inventory__container {
+    width: 60%;
+    height: 70%;
+    background-color: rgba(52, 152, 219, 0);
+    justify-content: center;
+    align-items: center;
+    -unity-text-align: upper-center;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4040379037015584800&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_02');
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    left: 20%;
+    top: 15%;
+    position: absolute;
+}
+
+.inventory__title {
+    -unity-font-style: normal;
+    color: rgb(253, 240, 219);
+    font-size: 68px;
+    position: absolute;
+    -unity-text-align: upper-center;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1');
+    top: 16%;
+}
+
+.inventory__back-button {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=8895885118603013600&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#icon_close');
+    width: 48%;
+    height: 48%;
+    -unity-background-scale-mode: scale-to-fit;
+    right: 15%;
+    top: -25%;
+}
+
+.inventory__header {
+    height: 13%;
+
+}
+
+.inventory__scrollview .unity-scroll-view__content-container {
+    width: 79%;
+    height: 149%;
+    background-color: rgba(255, 0, 0, 0);
+    left: 4%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: -3%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inventory__scrollview Scroller {
+    left: 6%;
+    align-items: flex-start;
+}

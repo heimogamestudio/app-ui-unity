@@ -1,0 +1,918 @@
+.settings__screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-property: opacity;
+}
+
+.settings__screen--inactive {
+    background-color: rgba(20, 24, 255, 0);
+    display: flex;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4040379037015584800&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_02");
+    padding-bottom: 0;
+    width: 1110px;
+    height: 740px;
+    opacity: 0.05;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    scale: 0.8 0.8;
+}
+
+.settings-header-decoration-right {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 19%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1596050124531588824&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#halloween_deco_02");
+    top: 19%;
+    display: flex;
+}
+
+.settings-header-decoration-left {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 19%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1596050124531588824&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#halloween_deco_02");
+    scale: -1 1;
+    top: 21%;
+    display: flex;
+}
+
+.settings__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    background-color: rgba(26, 36, 46, 0.95);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    font-size: 30px;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings__header {
+    background-color: rgba(41, 128, 185, 0);
+    background-image: none;
+    display: flex;
+    height: 13%;
+}
+
+.settings-title-label {
+    -unity-font-style: normal;
+    font-size: 61px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-outline-width: 0;
+    opacity: 1;
+}
+
+.settings-header-banner {
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    left: 25%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2077197669180643507&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Header_bg_03");
+    display: flex;
+}
+
+.settings__panel-label {
+    -unity-font-style: normal;
+    font-size: 40px;
+    color: rgb(141, 91, 38);
+    -unity-text-align: middle-center;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-outline-width: 0;
+}
+
+.settings__panel-body {
+    flex-grow: 1;
+    background-color: rgba(103, 96, 96, 0);
+    width: 50%;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.settings__separator {
+    height: 95%;
+    width: auto;
+    visibility: visible;
+    display: flex;
+    overflow: hidden;
+    background-image: url("project://database/Assets/UI/Textures/Misc/Separator_04.png?fileID=2050611963&guid=e3f1b933b557f458791b1db0a2157131&type=3#Separator_04");
+    flex-basis: 20px;
+}
+
+.settings__account {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 40%;
+    margin-top: 11px;
+}
+
+.settings__account-button {
+    padding-top: 10px;
+    height: 80px;
+    width: 80%;
+    margin-top: 10px;
+    font-size: 40px;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4355731583856638786&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_08");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    -unity-text-align: upper-center;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    -unity-text-outline-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+}
+
+.settings__account-button:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    scale: 1.1 1.1;
+    transition-duration: 0.25s;
+}
+
+.settings__account-button:active {
+    -unity-background-image-tint-color: rgb(140, 140, 140);
+}
+
+.settings__social-button-1 {
+    width: 90%;
+    height: 82px;
+}
+
+.settings__social-button-2 {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6432575019658845157&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_11");
+    width: 90%;
+    height: 82px;
+    -unity-text-align: upper-center;
+}
+
+.settings__player-settings {
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
+.settings__player-label {
+    -unity-font-style: normal;
+    font-size: 42px;
+    -unity-text-align: upper-center;
+    color: rgb(142, 91, 38);
+    display: flex;
+    flex-basis: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 4px;
+}
+
+.settings__player-text-field {
+    width: 85%;
+    color: rgb(150, 126, 97);
+    display: flex;
+    top: -2%;
+    left: 5%;
+    flex-basis: 20%;
+    margin-left: 12px;
+    margin-right: 11px;
+    padding-right: 19px;
+    padding-left: 4px;
+    margin-top: 9px;
+    font-size: 30px;
+}
+
+.unity-text-field__input {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: rgb(187, 157, 119);
+    border-right-color: rgb(187, 157, 119);
+    border-top-color: rgb(187, 157, 119);
+    border-bottom-color: rgb(187, 157, 119);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.settings__toggle {
+    flex-basis: 17%;
+    margin-top: 16px;
+    -unity-text-align: upper-center;
+    font-size: 30px;
+}
+
+.unity-toggle__input {
+    display: flex;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-toggle__label {
+    width: 83%;
+    font-size: 32px;
+    top: 1%;
+    left: 9%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(142, 91, 38);
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-toggle__checkmark {
+    width: 50px;
+    height: 50px;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: rgb(187, 157, 119);
+    border-right-color: rgb(187, 157, 119);
+    border-top-color: rgb(187, 157, 119);
+    border-bottom-color: rgb(187, 157, 119);
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    transition-duration: 0.5s;
+}
+
+#settings__toggle:checked #unity-checkmark {
+    position: absolute;
+    background-image: url("project://database/Assets/UI/Textures/Icons/CheckIcon.psd?fileID=2800000&guid=5282b08fed15246459de4e08eaaa781c&type=3#CheckIcon");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    background-color: rgb(233, 224, 200);
+}
+
+#settings__toggle #unity-checkmark {
+    position: absolute;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.settings__theme-container {
+    flex-basis: 24%;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 26px;
+}
+
+.settings_dropdown-container {
+}
+
+.settings-dropdown {
+}
+
+.settings__dropdown-label {
+    position: relative;
+    font-size: 31px;
+    white-space: normal;
+    flex-basis: 26%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align: middle-left;
+    top: 15%;
+}
+
+.unity-base-popup-field {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-base-popup-field__arrow {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3263076255209597889&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_03");
+    width: 60px;
+    height: 60px;
+    -unity-background-scale-mode: scale-to-fit;
+    display: flex;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-popup-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.unity-base-popup-field__text {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: normal;
+    -unity-text-align: upper-left;
+    left: 9px;
+    top: 5px;
+    color: rgb(150, 126, 97);
+    display: flex;
+}
+
+.unity-base-popup-field {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7726495693756561115&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Hud_bg_02");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-font-style: italic;
+}
+
+.unity-base-slider__input {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.settings__slider1-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 17%;
+}
+
+.settings__slider2-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 17%;
+}
+
+.settings__slide-toggle-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 15%;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.unity-radio-button__input {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-radio-button__checkmark-background {
+    scale: 1.1 1.1;
+    translate: 2px 0;
+}
+
+.unity-radio-button__checkmark {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3395496807846359274&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_05");
+    scale: 1.2 1.2;
+}
+
+.unity-radio-button__text {
+    margin-left: 16px;
+}
+
+.settings__radio-button-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 29%;
+    height: 86%;
+    top: -4%;
+    margin-left: 0;
+}
+
+.settings__radio-button-group-label {
+    margin-top: 0;
+    opacity: 1;
+    position: relative;
+    white-space: normal;
+    flex-basis: 31%;
+    margin-left: 23px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align: middle-left;
+    font-size: 31px;
+    top: -13%;
+}
+
+.settings__radio-button-group {
+    color: rgb(151, 129, 98);
+    font-size: 37px;
+    flex-basis: 46%;
+    height: 100%;
+    margin-left: 16%;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+RadioButton {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+#settings__slide-toggle .slide-toggle__label {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+#settings__slide-toggle Label {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+.settings__screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-property: opacity;
+}
+
+.settings__screen--inactive {
+    background-color: rgba(20, 24, 255, 0);
+    display: flex;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4040379037015584800&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_02");
+    padding-bottom: 0;
+    width: 1110px;
+    height: 740px;
+    opacity: 0.05;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    scale: 0.8 0.8;
+}
+
+.settings-header-decoration-right {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 19%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1596050124531588824&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#halloween_deco_02");
+    top: 19%;
+    display: flex;
+}
+
+.settings-header-decoration-left {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 19%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1596050124531588824&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#halloween_deco_02");
+    scale: -1 1;
+    top: 21%;
+    display: flex;
+}
+
+.settings__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    background-color: rgba(26, 36, 46, 0.95);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    font-size: 39px;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings__header {
+    background-color: rgba(41, 128, 185, 0);
+    background-image: none;
+    display: flex;
+    height: 13%;
+}
+
+.settings-title-label {
+    -unity-font-style: normal;
+    font-size: 61px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-outline-width: 0;
+    opacity: 1;
+}
+
+.settings-header-banner {
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    left: 25%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2077197669180643507&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Header_bg_03");
+    display: flex;
+}
+
+.settings__panel-label {
+    -unity-font-style: normal;
+    font-size: 40px;
+    color: rgb(141, 91, 38);
+    -unity-text-align: middle-center;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-outline-width: 0;
+}
+
+.settings__panel-body {
+    flex-grow: 1;
+    background-color: rgba(103, 96, 96, 0);
+    width: 50%;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.settings__separator {
+    height: 95%;
+    width: auto;
+    visibility: visible;
+    display: flex;
+    overflow: hidden;
+    background-image: url("project://database/Assets/UI/Textures/Misc/Separator_04.png?fileID=2050611963&guid=e3f1b933b557f458791b1db0a2157131&type=3#Separator_04");
+    flex-basis: 20px;
+}
+
+.settings__account {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 40%;
+    margin-top: 11px;
+}
+
+.settings__account-button {
+    padding-top: 10px;
+    height: 80px;
+    width: 80%;
+    margin-top: 10px;
+    font-size: 40px;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4355731583856638786&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_08");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    -unity-text-align: upper-center;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    -unity-text-outline-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+}
+
+.settings__account-button:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    scale: 1.1 1.1;
+    transition-duration: 0.25s;
+}
+
+.settings__account-button:active {
+    -unity-background-image-tint-color: rgb(140, 140, 140);
+}
+
+.settings__social-button-1 {
+    width: 90%;
+    height: 82px;
+}
+
+.settings__social-button-2 {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6432575019658845157&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_11");
+    width: 90%;
+    height: 82px;
+    -unity-text-align: upper-center;
+}
+
+.settings__player-settings {
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
+.settings__player-label {
+    -unity-font-style: normal;
+    font-size: 42px;
+    -unity-text-align: upper-center;
+    color: rgb(142, 91, 38);
+    display: flex;
+    flex-basis: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 4px;
+}
+
+.settings__player-text-field {
+    width: 85%;
+    color: rgb(150, 126, 97);
+    display: flex;
+    top: -2%;
+    left: 5%;
+    flex-basis: 20%;
+    margin-left: 12px;
+    margin-right: 11px;
+    padding-right: 19px;
+    padding-left: 4px;
+    margin-top: 9px;
+    font-size: 30px;
+}
+
+.unity-text-field__input {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: rgb(187, 157, 119);
+    border-right-color: rgb(187, 157, 119);
+    border-top-color: rgb(187, 157, 119);
+    border-bottom-color: rgb(187, 157, 119);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.settings__toggle {
+}
+
+.unity-toggle__input {
+    display: flex;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-toggle__label {
+    width: 83%;
+    font-size: 32px;
+    top: 1%;
+    left: 9%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(142, 91, 38);
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-toggle__checkmark {
+    width: 50px;
+    height: 50px;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: rgb(187, 157, 119);
+    border-right-color: rgb(187, 157, 119);
+    border-top-color: rgb(187, 157, 119);
+    border-bottom-color: rgb(187, 157, 119);
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    transition-duration: 0.5s;
+}
+
+#settings__toggle:checked #unity-checkmark {
+    position: absolute;
+    background-image: url("project://database/Assets/UI/Textures/Icons/CheckIcon.psd?fileID=2800000&guid=5282b08fed15246459de4e08eaaa781c&type=3#CheckIcon");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    background-color: rgb(233, 224, 200);
+}
+
+#settings__toggle #unity-checkmark {
+    position: absolute;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.settings__theme-container {
+    flex-basis: 24%;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 26px;
+}
+
+.settings_dropdown-container {
+    flex-basis: 17%;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.settings-dropdown {
+    padding-top: 5%;
+    width: 85%;
+}
+
+.settings__dropdown-label {
+    position: relative;
+    font-size: 40px;
+    white-space: normal;
+    flex-basis: 33%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    translate: 18px 0;
+    -unity-text-align: middle-left;
+    top: 15%;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.unity-base-popup-field {
+    padding-top: -6px;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-base-popup-field__arrow {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3263076255209597889&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_03");
+    width: 60px;
+    height: 60px;
+    -unity-background-scale-mode: scale-to-fit;
+    display: flex;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-popup-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.unity-base-popup-field__text {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: normal;
+    -unity-text-align: upper-left;
+    left: 9px;
+    top: 5px;
+    color: rgb(150, 126, 97);
+    display: flex;
+}
+
+.unity-base-popup-field {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7726495693756561115&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Hud_bg_02");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-font-style: italic;
+}
+
+.unity-base-slider__input {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.settings__slider1-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 17%;
+}
+
+.settings__slider2-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 17%;
+}
+
+.settings__slide-toggle-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 15%;
+}
+
+.settings__slide-toggle {
+    flex-basis: 100%;
+    right: 0;
+    height: auto;
+    max-height: 55%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    left: 3%;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    flex-direction: row;
+}
+
+.unity-radio-button__input {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.unity-radio-button__checkmark-background {
+    scale: 1.1 1.1;
+    translate: 2px 0;
+}
+
+.unity-radio-button__checkmark {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3395496807846359274&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_05");
+    scale: 1.2 1.2;
+}
+
+.unity-radio-button__text {
+    margin-left: 16px;
+}
+
+.settings__radio-button-container {
+    width: 100%;
+    flex-direction: row;
+    flex-basis: 29%;
+    height: 86%;
+    top: -4%;
+    margin-left: 0;
+}
+
+.settings__radio-button-group-label {
+    margin-top: 0;
+    opacity: 1;
+    position: relative;
+    white-space: normal;
+    flex-basis: 34%;
+    margin-left: 23px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align: middle-left;
+    font-size: 35px;
+    top: -13%;
+}
+
+.settings__radio-button-group {
+    color: rgb(151, 129, 98);
+    font-size: 37px;
+    flex-basis: 46%;
+    height: 100%;
+    margin-left: 16%;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+RadioButton {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+#settings__slide-toggle .slide-toggle__label {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+#settings__slide-toggle Label {
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+.settings__dropdown {
+    flex-basis: 50%;
+}

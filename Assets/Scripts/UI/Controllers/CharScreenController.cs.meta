@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8cfb60f421bbd6e47a15d34b53d2384e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/UI/Controllers/CharScreenController.cs
+  uploadId: 714966

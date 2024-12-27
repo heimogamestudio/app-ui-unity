@@ -1,0 +1,22 @@
+.signup__description {
+    position: relative;
+    align-items: center;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1");
+    color: rgb(142, 91, 38);
+    font-size: 40px;
+    flex-wrap: wrap;
+    white-space: normal;
+    flex-basis: 60%;
+    text-shadow: 0 0 0 rgb(0, 0, 0);
+    display: flex;
+    top: 3%;
+    bottom: 3%;
+}
+
+.separator__image {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-6242814450321608224&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Separator_03");
+    width: 91%;
+    height: 15px;
+    position: absolute;
+}

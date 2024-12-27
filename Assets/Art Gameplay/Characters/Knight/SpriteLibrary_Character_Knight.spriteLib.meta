@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0f67f04e7aa7432468816a8f7bce8b71
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: db2778f6d440c47ddacff25997d7c062, type: 3}
+  primaryLibrary: {fileID: 7108339969198208228, guid: 54544361953a298479fa5405cc82e86c,
+    type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Art Gameplay/Characters/Knight/SpriteLibrary_Character_Knight.spriteLib
+  uploadId: 714966

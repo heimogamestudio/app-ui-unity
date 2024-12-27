@@ -1,0 +1,124 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Colors.uss?fileID=7433441132597879392&amp;guid=d7f86ff563ba646c1aa0ede35fb959c4&amp;type=3#Colors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Base/BackButton.uss?fileID=7433441132597879392&amp;guid=c94195ad6d09744f4a70246bca8d99f2&amp;type=3#BackButton" />
+    <Style src="project://database/Assets/UI/Uss/Screens/SettingsScreen.uss?fileID=7433441132597879392&amp;guid=bcd11a7aab108fb4abab341a2488a8d2&amp;type=3#SettingsScreen" />
+    <Style src="project://database/Assets/UI/Uss/Base/SlidersHorizontal.uss?fileID=7433441132597879392&amp;guid=b70346ab9f72e4db4ab4ec16f1b1c16f&amp;type=3#SlidersHorizontal" />
+    <Style src="project://database/Assets/UI/Uss/CustomElements/SlideToggle.uss?fileID=7433441132597879392&amp;guid=c6c441a1209d7ec4e918791ea0addc99&amp;type=3#SlideToggle" />
+    <ui:VisualElement name="settings__screen" class="settings__screen text__font--default">
+        <ui:VisualElement name="settings__background" class="settings__background" style="top: -2px; left: 0;" />
+        <ui:VisualElement name="settings__container" class="settings__container">
+            <ui:VisualElement name="settings__header" picking-mode="Ignore" class="settings__header">
+                <ui:VisualElement name="settings-header__decoration-right--halloween" picking-mode="Ignore" class="settings-header-decoration-right theme__decoration--halloween" />
+                <ui:VisualElement name="settings-header__decoration-left--halloween" picking-mode="Ignore" class="settings-header-decoration-left theme__decoration--halloween" />
+                <ui:VisualElement name="settings-header__banner-halloween" picking-mode="Ignore" class="settings-header-banner theme__decoration--halloween" style="position: absolute; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2077197669180643507&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Header_bg_03&quot;);" />
+                <ui:VisualElement name="settings-header__decoration-left--christmas" picking-mode="Ignore" class="settings-header-decoration-left theme__decoration--christmas" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-963673561422133642&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Christmas_Deco_02&quot;); -unity-background-scale-mode: scale-to-fit; rotate: 56deg; translate: -8px 9px; scale: -1 1.1;" />
+                <ui:VisualElement name="settings-header__decoration-right--christmas" picking-mode="Ignore" class="settings-header-decoration-right theme__decoration--christmas" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-963673561422133642&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Christmas_Deco_02&quot;); -unity-background-scale-mode: scale-to-fit; rotate: -71deg; translate: 3px 8px; scale: 1.1 1.1;" />
+                <ui:VisualElement name="settings-header__banner-christmas" picking-mode="Ignore" class="settings-header-banner theme__decoration--christmas" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3364424403186932412&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Header_bg_christmas&quot;);" />
+                <ui:Label text="Settings" display-tooltip-when-elided="true" name="settings__panel-label" picking-mode="Ignore" class="settings-title-label">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5962506102104064)" />
+                    </Bindings>
+                </ui:Label>
+                <ui:Button display-tooltip-when-elided="true" name="settings__panel-back-button" class="cursor-b back-button">
+                    <ui:VisualElement name="settings__panel-back-button-icon" picking-mode="Ignore" class="back-button-icon" style="width: 60%; height: 60%;" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="settings__body-container" picking-mode="Ignore" class="settings__body-container">
+                <ui:VisualElement name="settings__left-container" picking-mode="Ignore" class="settings__panel-body">
+                    <ui:VisualElement name="settings__account" picking-mode="Ignore" class="settings__account text__size--medium">
+                        <ui:Label text="Account" display-tooltip-when-elided="true" name="settings__social-label" picking-mode="Ignore" class="settings__panel-label">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(2386939600896)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:Button text="Reset Player Level" display-tooltip-when-elided="true" name="settings__social-button1" class="settings__account-button cursor-b settings__social-button-1">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(2480212533248)" />
+                            </Bindings>
+                        </ui:Button>
+                        <ui:Button text="Reset Player Currency" display-tooltip-when-elided="true" name="settings__social-button2" class="settings__account-button cursor-b settings__social-button-2">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(2581387534336)" />
+                            </Bindings>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="settings__player-settings" picking-mode="Ignore" class="settings__player-settings">
+                        <ui:Label text="Player Name" display-tooltip-when-elided="true" name="settings__player-label" picking-mode="Ignore" class="settings__player-label">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(2252730261504)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:TextField value="GUEST_123456" name="settings__player-textfield" class="settings__player-text-field" />
+                        <ui:Toggle label="Checkbox example" name="settings__toggle" value="true" class="unity-toggle__label settings__toggle">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="label" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(2233855893504)" />
+                            </Bindings>
+                        </ui:Toggle>
+                        <ui:VisualElement name="settings__theme-container" picking-mode="Ignore" class="settings__theme-container">
+                            <ui:Label text="Theme" display-tooltip-when-elided="true" name="settings__theme-label" picking-mode="Ignore" class="settings__panel-label" style="margin-top: 0; position: relative; flex-basis: 31%; height: 100%; margin-left: 0; margin-right: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-align: middle-center;">
+                                <Bindings>
+                                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(1899318206464)" />
+                                </Bindings>
+                            </ui:Label>
+                            <ui:DropdownField index="0" choices="Default,Christmas,Halloween" name="settings__theme-dropdown" class="settings-dropdown settings__panel-label" style="flex-basis: 62%; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="settings__separator" picking-mode="Ignore" class="settings__separator" />
+                <ui:VisualElement name="settings__right-container" picking-mode="Ignore" class="settings__panel-body" style="flex-basis: 48%;">
+                    <ui:VisualElement name="settings__dropdown-container" picking-mode="Ignore" class="settings_dropdown-container">
+                        <ui:Label text="Dropdown example" display-tooltip-when-elided="true" name="settings__dropdown-label" picking-mode="Ignore" class="settings__panel-label settings__dropdown-label">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(21377310720)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:DropdownField choices="Item1,Item2,Item3" name="settings__dropdown" class="settings__panel-label settings__dropdown" />
+                        <ui:VisualElement name="settings__language-icon" style="flex-grow: 0; flex-basis: 12%; height: 40%; background-image: none; -unity-background-scale-mode: scale-to-fit; top: 10%; left: 3%;">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedTexture property="style.backgroundImage" table="GUID:659aafbdf1869488a834fd194fdc236a" entry="Id(13420716032)" />
+                            </Bindings>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="settings__slider1-container" picking-mode="Ignore" class="settings__slider1-container">
+                        <ui:Label text="Music volume" display-tooltip-when-elided="true" name="settings__slider1-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 36px; white-space: normal; translate: 18px 0; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_A.png?fileID=2800000&amp;guid=0fc53ad8e877049c3aef54a3f8a1e01a&amp;type=3#Cursor_A&quot;);">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(1830770696192)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="settings__slider1-drag-area" style="flex-basis: 76%; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);">
+                            <ui:Slider high-value="100" name="settings__slider1" value="50" fill="true" class="settings-slider" style="top: 30%; width: 90%; left: 5%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="settings__slider2-container" picking-mode="Ignore" class="settings__slider2-container">
+                        <ui:Label text="SFX volume" display-tooltip-when-elided="true" name="settings__slider2-label" picking-mode="Ignore" class="settings__panel-label" style="flex-basis: 29%; height: 96px; -unity-text-align: middle-left; flex-wrap: wrap; font-size: 36px; white-space: normal; translate: 16px 0; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_A.png?fileID=2800000&amp;guid=0fc53ad8e877049c3aef54a3f8a1e01a&amp;type=3#Cursor_A&quot;);">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(1870314594304)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="settings__slider2-drag-area" style="flex-basis: 76%; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);">
+                            <ui:Slider high-value="100" name="settings__slider2" value="50" fill="true" class="settings-slider" style="left: 5%; position: absolute; top: 30%; width: 90%; margin-left: 20px; margin-right: 0; margin-top: 0; margin-bottom: 0; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="settings__slide-toggle-container" picking-mode="Ignore" class="settings__slide-toggle-container">
+                        <MyUILibrary.SlideToggle label="Fps Counter" name="settings__slide-toggle" class="settings__slide-toggle color__text--brown text__size--small cursor-b">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="label" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(1874093662208)" />
+                            </Bindings>
+                        </MyUILibrary.SlideToggle>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="settings__radio-button-group-container" picking-mode="Ignore" class="settings__radio-button-container">
+                        <ui:Label text="Target Frame Rate" display-tooltip-when-elided="true" name="settings__radio-button-group-label" picking-mode="Ignore" class="settings__panel-label settings__radio-button-group-label">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(1878497681408)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:RadioButtonGroup name="settings__radio-button-group" choices="Max,60 fps,30 fps" picking-mode="Ignore" class="settings__panel-label settings__radio-button-group" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Colors.uss?fileID=7433441132597879392&amp;guid=d7f86ff563ba646c1aa0ede35fb959c4&amp;type=3#Colors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Buttons.uss?fileID=7433441132597879392&amp;guid=1677b2c0e41604415b56804bf6a04fd3&amp;type=3#Buttons" />
+    <Style src="project://database/Assets/UI/Uss/Screens/HomeScreen.uss?fileID=7433441132597879392&amp;guid=8ac4b4fde8aa1aa46b4b38eeca967ecc&amp;type=3#HomeScreen" />
+    <ui:VisualElement name="home__screen" class="cursor-a home__screen" style="top: 0; left: 0; width: 100%; height: 100%;">
+        <ui:VisualElement name="home__background" class="home-screen__background" style="flex-grow: 1; display: none;" />
+        <ui:VisualElement name="home-chat__container" picking-mode="Ignore" class="chat__container">
+            <ui:VisualElement name="home-chat__background" picking-mode="Ignore" class="chat__panel chat__panel-bg" style="flex-direction: row; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;">
+                <ui:VisualElement name="home-chat__icon" picking-mode="Ignore" class="chat__panel-icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4952037027192820341&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_Chat_menu&quot;);" />
+                <ui:VisualElement name="home-chat__body" picking-mode="Ignore" style="max-width: none; width: 550px; flex-basis: 76%; align-items: center; left: 6%; top: 4%;">
+                    <ui:VisualElement name="home-chat__line-top" picking-mode="Ignore" style="height: 8px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=2055241628242669414&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Separator_01&quot;); width: 96%; margin-top: 10px; margin-bottom: 8px;" />
+                    <ui:Label display-tooltip-when-elided="true" name="home-chat__text" text="Lorem ipsum dolor sit amet, his ei semper alterum deterruisset, sea ea intellegam instructior, ex mei viderer scaevola perfecto" enable-rich-text="true" picking-mode="Ignore" class="chat__panel-text" style="background-color: rgba(255, 151, 0, 0); color: rgb(253, 240, 219); height: 74px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; width: 100%; flex-basis: auto; padding-left: 15px; padding-right: 15px; -unity-font-style: normal;" />
+                    <ui:VisualElement name="home-chat__line-bottom" picking-mode="Ignore" style="height: 8px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=2055241628242669414&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Separator_01&quot;); width: 96%; margin-top: 8px; margin-bottom: 23px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="home-chat__decoration-xmas-left" class="theme__decoration--christmas" style="width: 134px; height: 94px; left: -84%; top: -13%; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=7226357027217880277&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Christmas_Deco_05&quot;);" />
+                <ui:VisualElement name="home-chat__decoration-xmas-center" class="theme__decoration--christmas" style="position: absolute; width: 140px; height: 78px; left: 266px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7577975996965622108&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Christmas_Deco_04&quot;); top: -30px;" />
+                <ui:VisualElement name="home-chat__decoration-xmas-right" class="theme__decoration--christmas" style="position: absolute; width: 134px; height: 94px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7341783667343711275&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Christmas_Deco_06&quot;); top: -24px; right: -14px;" />
+                <ui:VisualElement name="home-chat__decoration-halloween-center" class="theme__decoration--halloween" style="position: absolute; width: 225px; height: 103px; left: 211px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=5804229013307166206&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#halloween_deco_03&quot;); top: -78px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="home-title__container" picking-mode="Ignore" class="title__container">
+            <ui:VisualElement name="home-title__graphic--default" picking-mode="Ignore" class="theme__decoration--default title__graphic--default " />
+            <ui:VisualElement name="home-title__graphic--christmas" picking-mode="Ignore" class="theme__decoration--christmas title__graphic--xmas" />
+            <ui:VisualElement name="home-title__graphic--halloween" picking-mode="Ignore" class="theme__decoration--halloween title__graphic--halloween" />
+            <ui:VisualElement name="home-title__subtitle" picking-mode="Ignore" class="title__subtitle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="home-play__level-card" picking-mode="Ignore" class="play-level__container" style="background-color: rgba(77, 77, 77, 0);">
+            <ui:VisualElement name="home-play__background" style="flex-grow: 1; width: 97%; height: 94%; position: absolute; padding-top: 3%; padding-right: 3%; padding-bottom: 3%; padding-left: 3%; display: flex; justify-content: flex-end; bottom: 3%; background-image: url(&quot;project://database/Assets/UI/Textures/LevelThumbnails/Level_01.jpg?fileID=21300000&amp;guid=d0a5ab6f8b7cc0c449907191ee339dcd&amp;type=3#Level_01&quot;); -unity-background-scale-mode: scale-and-crop; translate: -3px -6px;">
+                <ui:VisualElement name="home-play__background-footer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.78); position: absolute; width: 97.5%; height: 37%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; align-items: center; left: 1.5%;">
+                    <ui:Label text="Level Name" display-tooltip-when-elided="true" name="home-play__level-name" enable-rich-text="false" picking-mode="Ignore" class="play-level__name text__size--medium text__style--normal text__shadow--large" style="width: 100%; height: auto; position: relative; display: flex; padding-left: 3%; padding-right: 3%; padding-bottom: 0; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: flex-end; flex-basis: 30%; margin-bottom: 6%; margin-top: 0; margin-right: 0; margin-left: 0;" />
+                    <ui:Button text="PLAY" display-tooltip-when-elided="true" name="home-play__level-button" class="play-level__button button-orange text__size--large color__text--white text__shadow--large" style="position: relative;">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5966959018500096)" />
+                        </Bindings>
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="home-play__level-frame" picking-mode="Ignore" class="play-level__frame">
+                <ui:VisualElement name="home-play__decoration-xmas-right" picking-mode="Ignore" class="theme__decoration--christmas decoration__xmas--right" />
+                <ui:VisualElement name="home-play__decoration-xmas-left" picking-mode="Ignore" class="theme__decoration--christmas decoration__xmas--left" />
+                <ui:VisualElement name="home-play__decoration-halloween-left" class="theme__decoration--halloween decoration__halloween--left" />
+                <ui:VisualElement name="home-play__decoration-halloween-right" class="theme__decoration--halloween decoration__halloween--right" />
+                <ui:VisualElement name="home-play__level-banner" class="level-number-banner play-level__banner">
+                    <ui:Label text="Level 0" display-tooltip-when-elided="true" name="home-play__level-number" class="color__text--white text__font--default text__shadow--small text__size--large" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

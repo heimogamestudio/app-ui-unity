@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: aadd118b1c24d4bc0bd1697906f38bae
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Readme/PopUpAboutThemes/PopUpAboutThemes.uss
+  uploadId: 714966

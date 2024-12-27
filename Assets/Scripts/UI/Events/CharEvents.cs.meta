@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4a2cbd0a1be0b4ad09108a92657d756b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/UI/Events/CharEvents.cs
+  uploadId: 714966

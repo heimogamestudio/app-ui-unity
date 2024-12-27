@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c9508ec55d364e9b8e114ceb3b73da6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 8400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/UI/Textures/RenderTextures/coinsVFXRenderTexturePortrait.renderTexture
+  uploadId: 714966

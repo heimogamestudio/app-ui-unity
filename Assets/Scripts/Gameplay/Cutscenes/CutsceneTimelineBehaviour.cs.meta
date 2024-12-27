@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b275e129b1c7fb146a9d1ca6b7d87619
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Cutscenes/CutsceneTimelineBehaviour.cs
+  uploadId: 714966

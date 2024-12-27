@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c75b56f4834dd4fb3aba4b171c02ea23
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/Audio/AudioManager.prefab
+  uploadId: 714966

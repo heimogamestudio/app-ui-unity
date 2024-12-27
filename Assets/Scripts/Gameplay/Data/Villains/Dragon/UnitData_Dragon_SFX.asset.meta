@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6cc7a24444ee4d048a463ced3686fd0c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Villains/Dragon/UnitData_Dragon_SFX.asset
+  uploadId: 714966

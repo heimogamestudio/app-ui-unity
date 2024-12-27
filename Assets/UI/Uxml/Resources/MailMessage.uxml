@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Screens/MailScreen.uss?fileID=7433441132597879392&amp;guid=093b19c999c06c04ab4d039b75b38838&amp;type=3#MailScreen" />
+    <Style src="project://database/Assets/UI/Uss/Screens/MailItem.uss?fileID=7433441132597879392&amp;guid=484b6ad9c90074060989447029448b08&amp;type=3#MailItem" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <ui:VisualElement name="MailItem" class="mail-message-selected" style="width: 90%; height: 145px; align-items: center; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);">
+        <ui:VisualElement name="mail-item__subject-background" picking-mode="Ignore" class="mail-item__subject-background">
+            <ui:VisualElement name="mail-item__text" picking-mode="Ignore" class="mail-item__text">
+                <ui:Label text="Message1" display-tooltip-when-elided="true" name="mail-item__subject" picking-mode="Ignore" class="mail-item__subject" />
+                <ui:Label text="01/01/2022" display-tooltip-when-elided="true" name="mail-item__date" picking-mode="Ignore" class="mail-item__date" />
+            </ui:VisualElement>
+            <ui:VisualElement name="mail-item__badge" picking-mode="Ignore" class="mail-item__badge" />
+        </ui:VisualElement>
+        <ui:VisualElement name="mail-item__icon-background" picking-mode="Ignore" class="mail-item-icon-background" style="position: absolute; left: 2%; top: 2%; align-items: center; background-image: none; -unity-background-scale-mode: scale-to-fit; height: 78%; display: flex; width: 32%;">
+            <ui:VisualElement name="mail-item__new" picking-mode="Ignore" class="mail-item__new" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

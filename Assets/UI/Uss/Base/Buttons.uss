@@ -1,0 +1,65 @@
+Button {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.25s;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: normal;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    transition-duration: 0.25s;
+    padding-bottom: 5%;
+}
+
+Button:hover {
+    scale: 1.1 1.1;
+}
+
+.button-orange {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4355731583856638786&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_08');
+    padding-bottom: 2%;
+    height: 100%;
+}
+
+.button-orange:hover {
+    -unity-background-image-tint-color: rgb(230, 126, 34);
+}
+
+.button-orange:active {
+    -unity-background-image-tint-color: rgb(211, 84, 0);
+}
+
+.button-orange--inactive {
+    -unity-background-image-tint-color: rgb(100, 100, 100);
+}
+
+.button-green {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7958151757775347986&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_10');
+}
+
+.button-green:hover {
+    -unity-background-image-tint-color: rgb(255, 226, 124);
+}
+
+.button-green:active {
+    -unity-background-image-tint-color: rgb(255, 177, 0);
+}
+
+.button-gray {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=536820708226765884&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_09');
+    color: rgb(240, 240, 240);
+}
+
+.button-gray:hover {
+    -unity-background-image-tint-color: rgb(245, 150, 20);
+}
+
+.button-gray:active {
+    -unity-background-image-tint-color: rgb(220, 90, 5);
+}
+

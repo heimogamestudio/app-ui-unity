@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59425a4fd85a15c48aa129a4817fe816
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Heroes/Knight/UnitData_Knight_SFX.asset
+  uploadId: 714966

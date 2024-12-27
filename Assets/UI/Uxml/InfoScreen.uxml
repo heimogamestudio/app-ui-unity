@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Buttons.uss?fileID=7433441132597879392&amp;guid=1677b2c0e41604415b56804bf6a04fd3&amp;type=3#Buttons" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Base/Colors.uss?fileID=7433441132597879392&amp;guid=d7f86ff563ba646c1aa0ede35fb959c4&amp;type=3#Colors" />
+    <Style src="project://database/Assets/UI/Uss/Screens/InfoScreen.uss?fileID=7433441132597879392&amp;guid=781ac023214c5484e915fc6a13051cc0&amp;type=3#InfoScreen" />
+    <ui:VisualElement name="info__screen" picking-mode="Ignore" class="screen__anchor--center">
+        <ui:VisualElement name="info__window" picking-mode="Ignore" class="main-window">
+            <ui:VisualElement name="info-banner" picking-mode="Ignore" class="banner">
+                <ui:Label text="Resources" display-tooltip-when-elided="true" name="info-banner__title" picking-mode="Ignore" class="text__size--extra-large color__text--white text__shadow--large text__align--middle-center banner__title-text" style="flex-basis: 50%; top: -8%;">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6153065827655680)" />
+                    </Bindings>
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="info-body" picking-mode="Ignore" class="body" style="align-items: center;">
+                <ui:VisualElement name="info-graphic" picking-mode="Ignore" class="graphic">
+                    <ui:VisualElement name="info-graphic__image" picking-mode="Ignore" class="graphic__image" />
+                </ui:VisualElement>
+                <ui:VisualElement name="info-signup__container" picking-mode="Ignore" class="signup__container">
+                    <ui:Label text="Discover UI Toolkit solutions and workflows in our free e-book" display-tooltip-when-elided="true" name="info-signup__description" picking-mode="Ignore" class="signup__description">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6153195121270784)" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Button display-tooltip-when-elided="true" name="info-signup__button" class="text__size--medium color__text--white button-green signup__button" style="position: relative; justify-content: center; align-items: center;">
+                        <ui:Label text="Get the e-book" display-tooltip-when-elided="true" name="info-signup__button-label" picking-mode="Ignore" class="text__size--medium signup__button-label">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6153262058168320)" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="info-separator" picking-mode="Ignore" class="separator">
+                <ui:VisualElement name="info-separator__image" picking-mode="Ignore" class="separator__image">
+                    <ui:Label text="More UI content from Unity" display-tooltip-when-elided="true" name="info-separator__label" picking-mode="Ignore" class="separator__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6153414135242752)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="info-content__container" picking-mode="Ignore" class="content__container">
+                <ui:Button display-tooltip-when-elided="true" name="info-content__docs-button" class="button-orange text__size--medium color__text--white content-button" style="position: relative;" />
+                <ui:Button display-tooltip-when-elided="true" name="info-content__forum-button" class="button-orange text__size--medium color__text--white content-button" style="position: relative;" />
+                <ui:Button display-tooltip-when-elided="true" name="info-content__blog-button" class="button-orange text__size--medium color__text--white content-button" style="position: relative;" />
+                <ui:Button display-tooltip-when-elided="true" name="info-content__asset-button" class="button-orange text__size--medium color__text--white content-button" style="position: relative;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

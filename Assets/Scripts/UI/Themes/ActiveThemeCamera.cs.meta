@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 28bbd2a2bdfcc4e01a594026c6eaf83e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 15
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/UI/Themes/ActiveThemeCamera.cs
+  uploadId: 714966

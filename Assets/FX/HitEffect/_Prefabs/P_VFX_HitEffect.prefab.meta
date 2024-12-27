@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bd923c11c31332243b786485e470ded9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/FX/HitEffect/_Prefabs/P_VFX_HitEffect.prefab
+  uploadId: 714966

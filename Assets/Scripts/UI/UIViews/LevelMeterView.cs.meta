@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3113f0314e69f4e1c9b9a7bd8feb5623
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/UI/UIViews/LevelMeterView.cs
+  uploadId: 714966

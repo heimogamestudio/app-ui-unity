@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7548928780946092791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5451474001100438031}
+  - component: {fileID: 8653987123221209742}
+  m_Layer: 0
+  m_Name: ThemeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5451474001100438031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7548928780946092791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8653987123221209742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7548928780946092791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143c1166a41e04f05bc31f035503f7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Document: {fileID: 0}
+  m_ThemeSettings:
+  - theme: Landscape--Default
+    tss: {fileID: -4733365628477956816, guid: 89ddb38e3d66e490792612f6cab5e713, type: 3}
+    panelSettings: {fileID: 11400000, guid: bcf58ff54d054a543830b7ae7a9c2892, type: 2}
+  - theme: Landscape--Christmas
+    tss: {fileID: -4733365628477956816, guid: 8ba87e8ca9df55d4cb15abc21bb6e684, type: 3}
+    panelSettings: {fileID: 11400000, guid: bcf58ff54d054a543830b7ae7a9c2892, type: 2}
+  - theme: Landscape--Halloween
+    tss: {fileID: -4733365628477956816, guid: d79b8bf7ffea9d846a040716d05afc73, type: 3}
+    panelSettings: {fileID: 11400000, guid: bcf58ff54d054a543830b7ae7a9c2892, type: 2}
+  - theme: Portrait--Default
+    tss: {fileID: -4733365628477956816, guid: 9be4de684c926488fb555fcdfd73f196, type: 3}
+    panelSettings: {fileID: 11400000, guid: a1d6f8dd1374e40a99de7ae3bc9cb9bc, type: 2}
+  - theme: Portrait--Halloween
+    tss: {fileID: -4733365628477956816, guid: 28903f1c7423743748f070edd75637cb, type: 3}
+    panelSettings: {fileID: 11400000, guid: a1d6f8dd1374e40a99de7ae3bc9cb9bc, type: 2}
+  - theme: Portrait--Christmas
+    tss: {fileID: -4733365628477956816, guid: f31bfc07703224025b3f9695cca7f377, type: 3}
+    panelSettings: {fileID: 11400000, guid: a1d6f8dd1374e40a99de7ae3bc9cb9bc, type: 2}
+  - theme: Default
+    tss: {fileID: -4733365628477956816, guid: 9be4de684c926488fb555fcdfd73f196, type: 3}
+    panelSettings: {fileID: 11400000, guid: a1d6f8dd1374e40a99de7ae3bc9cb9bc, type: 2}
+  - theme: Landscape
+    tss: {fileID: -4733365628477956816, guid: 89ddb38e3d66e490792612f6cab5e713, type: 3}
+    panelSettings: {fileID: 11400000, guid: bcf58ff54d054a543830b7ae7a9c2892, type: 2}
+  m_Debug: 0

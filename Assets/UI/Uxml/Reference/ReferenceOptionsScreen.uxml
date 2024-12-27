@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <ui:VisualElement name="reference-options-screen" picking-mode="Ignore" class="referenceMainMenu reference-main-menu" style="background-image: url(&quot;project://database/Assets/UI/Reference/1%20settings-screen.jpg?fileID=2800000&amp;guid=cf37770f7884f5c438f61acaff6fa5fe&amp;type=3#1 settings-screen&quot;); -unity-background-image-tint-color: rgb(255, 255, 255); opacity: 1; width: 100%; height: 100%; position: absolute; display: flex;" />
+</ui:UXML>

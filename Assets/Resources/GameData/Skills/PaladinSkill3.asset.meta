@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5d21bce7a1ab17e478584ad93f08c97a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Resources/GameData/Skills/PaladinSkill3.asset
+  uploadId: 714966

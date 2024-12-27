@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ab4f7fa8fdea9d74c92a36a939e924fb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/Managers/Manager_BattleGameplay.prefab
+  uploadId: 714966

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e7a6bc7a948595b42969791ebb1e0594
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Animations/Characters/AnimClips/Knight/Anim_Character_Knight_Attack.anim
+  uploadId: 714966

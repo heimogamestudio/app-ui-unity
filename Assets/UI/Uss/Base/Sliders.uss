@@ -1,0 +1,53 @@
+#unity-low-button {
+    display: none;
+}
+
+#unity-high-button {
+    display: none;
+}
+
+#unity-drag-container {
+    width: 100%;
+    align-items: auto;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+#unity-slider {
+    width: 60px;
+    height: 60px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+#unity-dragger {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3395496807846359274&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_05');
+    -unity-background-scale-mode: scale-to-fit;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    max-height: 60px;
+    max-width: 60px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+#unity-tracker {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-8408378496309066828&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#scrollbar_bg');
+    -unity-background-image-tint-color: rgb(192, 177, 138);
+    width: 25px;
+    align-items: center;
+    height: 95%;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}

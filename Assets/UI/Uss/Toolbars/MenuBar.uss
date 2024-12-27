@@ -1,0 +1,137 @@
+.menu__panel {
+    flex-grow: 1;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: -1%;
+}
+
+.menu__label {
+    position: absolute;
+    bottom: 0;
+    -unity-font-style: normal;
+    color: rgb(253, 238, 213);
+    font-size: 36px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.62);
+    display: flex;
+    opacity: 0;
+    transition-property: opacity, scale;
+    transition-duration: 0.4s, 0.25s;
+    scale: 0.5 0.5;
+}
+
+.menu__label--active {
+    position: absolute;
+    bottom: 0;
+    -unity-font-style: normal;
+    color: rgb(253, 238, 213);
+    font-size: 36px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.62);
+    display: flex;
+    transition-property: opacity, scale;
+    transition-duration: 0.25s, 0.15s;
+}
+
+.menu__button {
+    flex-basis: 19.6%;
+    width: 92%;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    -unity-text-align: lower-center;
+    -unity-font-style: bold;
+    align-items: center;
+    justify-content: center;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3219150286842703583&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Main_menu_button_01");
+    -unity-background-image-tint-color: rgb(183, 183, 183);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: -1px;
+    -unity-background-scale-mode: stretch-to-fill;
+    border-left-color: rgba(92, 35, 13, 0.43);
+    border-right-color: rgba(92, 35, 13, 0.43);
+    border-top-color: rgba(92, 35, 13, 0.43);
+    border-bottom-color: rgba(92, 35, 13, 0.43);
+    border-right-width: 0;
+    border-left-width: 2px;
+}
+
+.menu__button:active {
+    width: 100%;
+    background-color: rgb(255, 205, 25);
+    -unity-background-image-tint-color: rgb(255, 205, 25);
+}
+
+.menu__button:hover {
+    background-color: rgb(241, 196, 15);
+    -unity-background-image-tint-color: rgb(255, 205, 25);
+}
+
+.menu__button--active {
+    flex-basis: 19.6%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    -unity-text-align: lower-center;
+    -unity-font-style: bold;
+    align-items: center;
+    justify-content: center;
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1");
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3219150286842703583&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Main_menu_button_01");
+    -unity-background-image-tint-color: rgb(255, 205, 25);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: -1px;
+    -unity-background-scale-mode: stretch-to-fill;
+    border-left-color: rgba(92, 35, 13, 0.43);
+    border-right-color: rgba(92, 35, 13, 0.43);
+    border-top-color: rgba(92, 35, 13, 0.43);
+    border-bottom-color: rgba(92, 35, 13, 0.43);
+    border-right-width: 0;
+    border-left-width: 2px;
+}
+
+.menu__icon {
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 65%;
+    top: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: translate;
+    transition-duration: 0.2s;
+}
+
+.menu__icon--active {
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    translate: 0 -20px;
+    transition-property: translate, scale;
+    transition-duration: 0.25s, 0.25s;
+    scale: 0.9 0.9;
+    width: 67%;
+    height: 67%;
+}
+
+.menu__current-marker {
+}
+
+.level-meter__template-container {
+}
+
+.menu__button-group {
+    top: 0;
+    flex-basis: 75%;
+    margin-top: 2%;
+}

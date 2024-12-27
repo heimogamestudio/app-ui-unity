@@ -1,0 +1,52 @@
+.char__main-container {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    left: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container {
+    position: absolute;
+    width: 48%;
+    height: 19%;
+    top: 1%;
+    align-items: center;
+}
+
+.footer__container {
+    position: absolute;
+    width: 79%;
+    height: 20%;
+    flex-direction: row;
+    bottom: 3%;
+    align-items: center;
+}
+
+.char-inventory__container {
+    width: 75%;
+    height: 38%;
+    top: 24%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    left: 13%;
+}
+
+.nav-button__container {
+    width: 77%;
+    height: 10%;
+    top: 23%;
+}
+
+.footer__potion-icon {
+    position: relative;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3856444077584420230&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#icon_xp');
+    -unity-background-scale-mode: scale-to-fit;
+    height: 100%;
+    width: 50%;
+    flex-basis: 35%;
+    flex-grow: 1;
+}

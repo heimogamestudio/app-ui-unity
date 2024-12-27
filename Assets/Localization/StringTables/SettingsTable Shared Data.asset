@@ -1,0 +1,456 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: SettingsTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: SettingsTable
+  m_TableCollectionNameGuidString: dade14b2149874cc188fc560cf8f29d8
+  m_Entries:
+  - m_Id: 1830770696192
+    m_Key: Settings_MusicSlider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1870314594304
+    m_Key: Settings_SFXSlider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1878497681408
+    m_Key: Settings_FrameRateRadioButtons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478749429587968
+    m_Key: Settings_FrameRateRadioButtons_Max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2233855893504
+    m_Key: Settings_Checkbutton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2252730261504
+    m_Key: Settings_PlayerNameLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2386939600896
+    m_Key: Settings_AccountLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2480212533248
+    m_Key: Settings_ResetButton1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2581387534336
+    m_Key: Settings_ResetButton2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1899318206464
+    m_Key: Settings_ThemeDropdown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476952254210048
+    m_Key: Settings_ThemeDropdown_Option1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476985498263552
+    m_Key: Settings_ThemeDropdown_Option2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477015936327680
+    m_Key: Settings_ThemeDropdown_Option3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1874093662208
+    m_Key: Settings_FpsSlideToggle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477196048130048
+    m_Key: Settings_FpsSlideToggle_On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477945775775744
+    m_Key: Settings_FpsSlideToggle_Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21377310720
+    m_Key: Settings_LanguageDropdown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482007850147840
+    m_Key: Settings_LanguageDropdown_English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482054406922240
+    m_Key: Settings_LanguageDropdown_Danish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482117585723392
+    m_Key: Settings_LanguageDropdown_Spanish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482163551100928
+    m_Key: Settings_LanguageDropdown_French
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5962506102104064
+    m_Key: Settings_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964322869075968
+    m_Key: Menu_Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964384655368192
+    m_Key: Menu_Char
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964407635959808
+    m_Key: Menu_Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964432071974912
+    m_Key: Menu_Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964450430443520
+    m_Key: Menu_Mail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5966959018500096
+    m_Key: Home_PlayButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5966988399599616
+    m_Key: Home_Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6117969045217280
+    m_Key: Home_LevelSubtitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153065827655680
+    m_Key: Info_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153195121270784
+    m_Key: Info_DiscoverUIToolkit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153262058168320
+    m_Key: Info_GetEbook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153318945513472
+    m_Key: Info_Manual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153345629675520
+    m_Key: Info_Discuss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153368325054464
+    m_Key: Info_Blog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153387891482624
+    m_Key: Info_AssetStore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153414135242752
+    m_Key: Info_MoreContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187370209599488
+    m_Key: Mail_Inbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187396377862144
+    m_Key: Mail_Deleted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187432310464512
+    m_Key: Mail_Claim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187479865483264
+    m_Key: Mail_NoMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6192167281221632
+    m_Key: Shop_Free
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199112465637376
+    m_Key: Shop_MostPurchased
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199149585227776
+    m_Key: Shop_BestDeal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199224092844032
+    m_Key: Shop_OffDiscount
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199273661128704
+    m_Key: Shop_GoldSmall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199404519219200
+    m_Key: Shop_GoldMedium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199438241423360
+    m_Key: Shop_GoldLarge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199491098042368
+    m_Key: Shop_GoldExtraLarge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199884184018944
+    m_Key: Shop_GemsSmall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199927095943168
+    m_Key: Shop_GemsMedium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199952576339968
+    m_Key: Shop_GemsLarge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199980577513472
+    m_Key: Shop_PowerPotions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6200181723750400
+    m_Key: Shop_HealingPotions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6297508480278528
+    m_Key: Inventory_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309045907480576
+    m_Key: Inventory_Rarity_All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309153927585792
+    m_Key: Inventory_Rarity_Common
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309216842145792
+    m_Key: Inventory_Rarity_Rare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309247292792832
+    m_Key: Inventory_Rarity_Special
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309275289772032
+    m_Key: Inventory_SlotType_All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309305736224768
+    m_Key: Inventory_SlotType_Weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309338455990272
+    m_Key: Inventory_SlotType_Shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309367530905600
+    m_Key: Inventory_SlotType_Helmet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309398291931136
+    m_Key: Inventory_SlotType_Boots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309426343436288
+    m_Key: Inventory_SlotType_Gloves
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315048011030528
+    m_Key: Char_StatsTab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315080336531456
+    m_Key: Char_SkillsTab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315104374087680
+    m_Key: Char_BioTab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315128545861632
+    m_Key: Char_AutoEquip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315225115516928
+    m_Key: Char_LevelUp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315248591036416
+    m_Key: Char_Unequip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6920435546447872
+    m_Key: CharacterClass.Paladin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6920577112596480
+    m_Key: CharacterClass.Wizard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7048026030858240
+    m_Key: CharacterClass.Barbarian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7048384320888832
+    m_Key: CharacterClass.Necromancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052242984099840
+    m_Key: Rarity.Common
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052321920901120
+    m_Key: Rarity.Special
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052367135498240
+    m_Key: Rarity.Rare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062891260796928
+    m_Key: AttackType.Ranged
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062893907402752
+    m_Key: AttackType.Melee
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062895983583232
+    m_Key: AttackType.Magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229657865773056
+    m_Key: BioTitle.Paladin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229742183866368
+    m_Key: BioTitle.Wizard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229777718009856
+    m_Key: BioTitle.Barbarian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229870013669376
+    m_Key: BioTitle.Necromancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241299408183296
+    m_Key: SkillCategory.Basic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241336636825600
+    m_Key: SkillCategory.Intermediate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241382312796160
+    m_Key: SkillCategory.Advanced
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280168564416512
+    m_Key: SkillName.BarbarianSkill1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280171181662208
+    m_Key: SkillName.BarbarianSkill2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280172997795840
+    m_Key: SkillName.BarbarianSkill3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280174600019968
+    m_Key: SkillName.PaladinSkill1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280176390987776
+    m_Key: SkillName.PaladinSkill2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280177808662528
+    m_Key: SkillName.PaladinSkill3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280179318611968
+    m_Key: SkillName.WizardSkill1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280180828561408
+    m_Key: SkillName.WizardSkill2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280182250430464
+    m_Key: SkillName.WizardSkill3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7314553179201536
+    m_Key: Skill.TierFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7314598947446784
+    m_Key: Skill.NextTierLevelFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7359834620944384
+    m_Key: Skill.DamageFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411562842152960
+    m_Key: PopUp.InsufficientFunds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411606907510784
+    m_Key: PopUp.GearEquipped
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411611013734400
+    m_Key: PopUp.InsufficientPotions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411614566309888
+    m_Key: PopUp.ItemAddedToInventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411617997250560
+    m_Key: PopUp.PotionsAddedToInventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7430279634345984
+    m_Key: PopUp.WelcomeMessage
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5570773876179992681
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570773876179992681
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1729018512928

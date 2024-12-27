@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288e4763c1c9d4a8fba3dac352104de8, type: 3}
+  m_Name: 3 BlogLink
+  m_EditorClassIdentifier: 
+  m_ButtonElementId: info-content__blog-button
+  m_ButtonLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:dade14b2149874cc188fc560cf8f29d8
+    m_TableEntryReference:
+      m_KeyId: 6153368325054464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_TargetURL: https://unity.com/blog/engine-platform/new-ui-toolkit-demos-for-programmers-artists
+  references:
+    version: 2
+    RefIds: []

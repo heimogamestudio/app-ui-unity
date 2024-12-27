@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6dc139f0f5f1243899db0eb5558d57cb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Timelines/UI/Timeline_UI_Banner.playable
+  uploadId: 714966

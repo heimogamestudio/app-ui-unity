@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 14350e2edbe1749cfbd0355a7ca90952
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/ShaderGraphs/ShaderGraph_Sprite_Lit_FakeReflection.shadergraph
+  uploadId: 714966

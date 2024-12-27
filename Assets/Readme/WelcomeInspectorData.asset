@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba996dca2067413a964944321325305, type: 3}
+  m_Name: WelcomeInspectorData
+  m_EditorClassIdentifier: 
+  windowTitle: 'UI Toolkit: Dragon Crashers'
+  windowSubTitle: A vertical slice of an IDLE RPG mobile game sample
+  windowBanner: {fileID: 2800000, guid: ada642fbf85df4c33905831b00ba844a, type: 3}
+  introText: "<b>ABOUT</b><br>This official sample project showcases Unity\u2019s
+    UI Toolkit for runtime games and UI Builder workflows. Inspired by the 2D side-scrolling
+    idle RPG demo Dragon Crashers, it uses the UI Toolkit with UXML and USS files
+    to recreate common game interface layouts and styles, showing both simple and
+    more advanced use cases for the UI Toolkit"
+  infoBlock:
+  - {fileID: 11400000, guid: 2588996be5d1c49c8bcaeeb9f6d19b90, type: 2}
+  - {fileID: 11400000, guid: 3af016df5df584c0f949a56eb14898d4, type: 2}
+  - {fileID: 11400000, guid: 389334e0670d2480e8699340a28dc0dc, type: 2}
+  - {fileID: 11400000, guid: 38e8b5de7fedc4930ba7cf352d38c45d, type: 2}
+  - {fileID: 11400000, guid: 95f25433078d04d7599d64ea0afafbea, type: 2}
+  - {fileID: 11400000, guid: 9f479139018af4cc2a089cc08a8788be, type: 2}
+  - {fileID: 11400000, guid: c41c55ed91e2e4e418e96b58b86e2430, type: 2}
+  - {fileID: 11400000, guid: b7c9d94810fd941c09df630faea9715b, type: 2}
+  - {fileID: 11400000, guid: 0f0ebdc1a3b1c4d74bcacee86d793305, type: 2}
+  - {fileID: 11400000, guid: 9bb454634652741ee9c3b0d7c2954c46, type: 2}
+  - {fileID: 11400000, guid: 2531f6915308347e1891f10d73d5f7f9, type: 2}

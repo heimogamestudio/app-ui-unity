@@ -1,0 +1,453 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SettingsTable_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: dade14b2149874cc188fc560cf8f29d8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1830770696192
+    m_Localized: "Volumen m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1870314594304
+    m_Localized: Volumen efectos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1878497681408
+    m_Localized: Tasa de refresco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478749429587968
+    m_Localized: "M\xE1x"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2233855893504
+    m_Localized: Ejemplo de checkbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2252730261504
+    m_Localized: Nombre de jugador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2386939600896
+    m_Localized: Cuenta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2480212533248
+    m_Localized: Restablecer nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2581387534336
+    m_Localized: Restablecer monedas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1899318206464
+    m_Localized: Tema
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476952254210048
+    m_Localized: Predeterminado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476985498263552
+    m_Localized: Halloween
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477015936327680
+    m_Localized: Navidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1874093662208
+    m_Localized: Contador fps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477196048130048
+    m_Localized: Encendido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477945775775744
+    m_Localized: Apagado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21377310720
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482007850147840
+    m_Localized: "Ingl\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482054406922240
+    m_Localized: "Dan\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482117585723392
+    m_Localized: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482163551100928
+    m_Localized: "Franc\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5962506102104064
+    m_Localized: "Configuraci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964322869075968
+    m_Localized: Inicio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964384655368192
+    m_Localized: "H\xE9roes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964407635959808
+    m_Localized: Recursos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964432071974912
+    m_Localized: Tienda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964450430443520
+    m_Localized: Correo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5966959018500096
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5966988399599616
+    m_Localized: Nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6117969045217280
+    m_Localized: "La Guarida del Drag\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153065827655680
+    m_Localized: Recursos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153195121270784
+    m_Localized: Descubre UI Toolkit en nuestro e-book gratuito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153262058168320
+    m_Localized: "Obt\xE9n el e-book"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153414135242752
+    m_Localized: "M\xE1s contenido de UI de Unity"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153318945513472
+    m_Localized: Manual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153345629675520
+    m_Localized: Foro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153387891482624
+    m_Localized: Asset Store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153368325054464
+    m_Localized: Blog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187479865483264
+    m_Localized: "Ning\xFAn mensaje seleccionado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187432310464512
+    m_Localized: Reclamar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187396377862144
+    m_Localized: Eliminados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187370209599488
+    m_Localized: Entrada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199224092844032
+    m_Localized: de Descuento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6192167281221632
+    m_Localized: Gratis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199112465637376
+    m_Localized: "M\xE1s Comprado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199149585227776
+    m_Localized: Mejor Oferta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199980577513472
+    m_Localized: Pociones de Poder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6200181723750400
+    m_Localized: "Pociones de Curaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199273661128704
+    m_Localized: Un par de monedas de oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199404519219200
+    m_Localized: Una gran pila de monedas de oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199438241423360
+    m_Localized: Una bolsa llena de monedas de oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199491098042368
+    m_Localized: Un cofre lleno de monedas de oro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199927095943168
+    m_Localized: Una bolsa llena de gemas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199884184018944
+    m_Localized: Un par de gemas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199952576339968
+    m_Localized: "Un gran mont\xF3n de gemas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6297508480278528
+    m_Localized: Inventario de equipo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309153927585792
+    m_Localized: "Com\xFAn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309216842145792
+    m_Localized: Raro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309247292792832
+    m_Localized: Especial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309045907480576
+    m_Localized: Todos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309275289772032
+    m_Localized: Todos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309305736224768
+    m_Localized: Arma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309338455990272
+    m_Localized: Escudo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309367530905600
+    m_Localized: Casco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309398291931136
+    m_Localized: Botas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309426343436288
+    m_Localized: Guantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315048011030528
+    m_Localized: Stats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315080336531456
+    m_Localized: Habilidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315104374087680
+    m_Localized: Bio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315225115516928
+    m_Localized: Subir de nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315248591036416
+    m_Localized: Desequipar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315128545861632
+    m_Localized: Auto-equipar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6920435546447872
+    m_Localized: "Palad\xEDn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6920577112596480
+    m_Localized: Mago
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7048026030858240
+    m_Localized: Barbarian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7048384320888832
+    m_Localized: Necromancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052321920901120
+    m_Localized: Especial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052242984099840
+    m_Localized: "Com\xFAn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052367135498240
+    m_Localized: Raro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062895983583232
+    m_Localized: Magia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062891260796928
+    m_Localized: A distancia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062893907402752
+    m_Localized: Cuerpo a cuerpo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229870013669376
+    m_Localized: "El Se\xF1or de los Huesos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229777718009856
+    m_Localized: Bajo la Luna Llena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229742183866368
+    m_Localized: La Historia de la Hechicera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229657865773056
+    m_Localized: El Caballero Sagrado del Reino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241299408183296
+    m_Localized: "Ataque b\xE1sico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241336636825600
+    m_Localized: Ataque intermedio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241382312796160
+    m_Localized: Ataque avanzado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280168564416512
+    m_Localized: Golpe de Hacha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280172997795840
+    m_Localized: Furia de Berserker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280171181662208
+    m_Localized: Rompeescudos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280174600019968
+    m_Localized: Corte de Espada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280176390987776
+    m_Localized: Invocar Elemental
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280177808662528
+    m_Localized: Manos de Poder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280179318611968
+    m_Localized: "Rayo M\xE1gico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280180828561408
+    m_Localized: Bola de Fuego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280182250430464
+    m_Localized: "Esfera de Aniquilaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7314553179201536
+    m_Localized: <color=#775027>Rango {0}</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7314598947446784
+    m_Localized: Siguiente rango en <color=#775027>nivel {0}</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7359834620944384
+    m_Localized: "Inflige <color=#775027>{0} puntos de da\xF1o</color> a un enemigo
+      cada <color=#775027>{1} segundos</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411562842152960
+    m_Localized: "Fondos insuficientes para <color=#F8BB19>{0}</color>. Compra m\xE1s
+      <color=#F8BB19>{1}</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411606907510784
+    m_Localized: <color=#F8BB19>{0}</color> equipado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411614566309888
+    m_Localized: "<color=#F8BB19>{0}</color> a\xF1adido al inventario."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411617997250560
+    m_Localized: "<color=#F8BB19>{0} {1}{2}</color> a\xF1adido al inventario."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411611013734400
+    m_Localized: Pociones insuficientes para subir de nivel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7430279634345984
+    m_Localized: "\xA1Bienvenido <color=#F8BB19>{0}</color>!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

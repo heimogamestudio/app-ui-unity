@@ -1,0 +1,40 @@
+.text__style--bold {
+    -unity-font-style: bold;
+}
+
+.text__style--normal {
+    -unity-font-style: normal;
+}
+
+.text__size--small {
+    font-size: 35px;
+}
+
+.text__size--medium {
+    font-size: 45px;
+}
+
+.text__size--large {
+    font-size: 60px;
+}
+
+.text__size--extra-large {
+    font-size: 80px;
+    position: absolute;
+}
+
+.text__align--middle-center {
+    -unity-text-align: middle-center;
+}
+
+.text__font--default {
+   
+}
+
+.text__shadow--small {
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.67);
+}
+
+.text__shadow--large {
+    text-shadow: 0 5px 2px rgba(0, 0, 0, 0.67);
+}

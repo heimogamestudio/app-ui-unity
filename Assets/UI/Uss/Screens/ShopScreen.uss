@@ -1,0 +1,110 @@
+.shop__content-container {
+    height: 84%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    position: absolute;
+    top: 12.75%;
+    transform-origin: center;
+}
+
+.shop-screen-tabs {
+    flex-direction: row;
+    height: 14%;
+    flex-grow: 1;
+    max-width: 90%;
+    min-width: 70%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform-origin: bottom;
+}
+
+.shop-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=975008897348985379&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_03');
+    top: 0;
+}
+
+.shop-screen-scroll-view {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-grow: 0;
+    -unity-text-align: middle-left;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+.shoptab {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: rgb(236, 240, 241);
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6214813937661682407&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#tab_window_03_unselected');
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B');
+}
+
+.selected-shoptab {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7422469351783473743&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#tab_window_03_selected');
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 12%;
+}
+
+.unselected-shopcontent {
+    display: none;
+}
+
+#unity-slider {
+    height: 65px;
+    width: 95%;
+    top: 24px;
+    max-width: 95%;
+    min-width: 95%;
+    left: 2%;
+    max-height: 65px;
+    min-height: 65px;
+}
+
+#unity-tracker {
+    -unity-background-image-tint-color: rgba(44, 62, 80, 0.48);
+    min-height: 24px;
+    max-height: 24px;
+    height: 24px;
+    min-width: 90%;
+    max-width: 90%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-8408378496309066828&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#scrollbar_bg');
+    -unity-background-scale-mode: stretch-to-fill;
+    top: 16%;
+    left: 9%;
+}
+
+#unity-dragger {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=8719887921484617844&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_14');
+    width: 200px;
+    min-height: 50px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 50px;
+    left: 3%;
+}
+
+#unity-drag-container {
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    width: 95%;
+    max-width: 95%;
+    min-width: 95%;
+}
+
+.shop-screen-scroll-view #unity-content-container {
+    align-items: center;
+    justify-content: center;
+}

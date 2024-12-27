@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 41594e6217c589f46b7453e95fc0ad5a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/FX/NumberDisplay/_Prefabs/P_NumberDisplay.prefab
+  uploadId: 714966

@@ -1,0 +1,13 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    -unity-text-align: upper-left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.popup-image {
+    height: 380px;
+}

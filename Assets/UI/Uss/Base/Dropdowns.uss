@@ -1,0 +1,46 @@
+/* Note that certain elements (parts of compound elements like Dropdowns) are not directly added to the UXML. These may appear grayed out in the
+UIBuilder Hierarchy. If adding the stylesheet to the UXML does not affect the element, source them from a Theme Style Sheet.   */
+
+.unity-base-dropdown__item {
+    -unity-font-style: normal;
+    -unity-text-align: upper-left;
+    font-size: 30px;
+    color: rgb(157, 127, 91);
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1');
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-outline-width: 0;
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+    }
+
+.unity-base-dropdown__item-content {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+.unity-base-popup-field__text {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+.unity-base-dropdown {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+.unity-popup-field__input {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+.unity-base-field__input {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+.unity-text-field {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+.unity-text-element--inner-input-field-component {
+   cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+
+PopupTextElement  {
+    cursor: url('project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B') 10 11;
+}
+

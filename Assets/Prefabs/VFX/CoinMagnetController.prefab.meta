@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 91530244c04a75a4485154a092858e68
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/VFX/CoinMagnetController.prefab
+  uploadId: 714966

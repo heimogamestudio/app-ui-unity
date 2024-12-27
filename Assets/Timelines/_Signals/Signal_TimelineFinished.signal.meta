@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c32bd10888681e34b805562f628e793c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Timelines/_Signals/Signal_TimelineFinished.signal
+  uploadId: 714966

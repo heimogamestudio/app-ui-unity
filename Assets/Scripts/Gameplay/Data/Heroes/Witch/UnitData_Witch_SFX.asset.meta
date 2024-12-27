@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2789e6c5ce4396c45bba69b90127a042
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Heroes/Witch/UnitData_Witch_SFX.asset
+  uploadId: 714966

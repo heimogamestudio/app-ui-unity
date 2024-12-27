@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 79cf976dcb4484f4c8106d442de1e4cd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Resources/GameData/Equipment/EquipmentSpecialGloves.asset
+  uploadId: 714966

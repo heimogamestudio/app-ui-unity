@@ -1,0 +1,5 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="log__background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.8);">
+        <engine:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis enim nec neque imperdiet pellentesque. Phasellus risus sapien, convallis at viverra mattis, vulputate in ligula. Mauris vitae bibendum elit. Maecenas egestas ultrices tincidunt. Nulla facilisi. Aenean scelerisque aliquam tincidunt. Praesent egestas massa rhoncus velit consectetur facilisis. Proin ut tristique enim. Nulla cursus scelerisque ullamcorper. Aenean lobortis dapibus scelerisque. Duis vel dui feugiat, sagittis ipsum sed, lacinia ipsum. Ut ornare scelerisque nulla, eu eleifend magna tempus ac. Pellentesque id quam rhoncus urna fermentum tempus at eu ante." name="log__label" style="flex-grow: 1; color: rgb(212, 212, 212); white-space: normal; font-size: 26px;" />
+    </engine:VisualElement>
+</engine:UXML>

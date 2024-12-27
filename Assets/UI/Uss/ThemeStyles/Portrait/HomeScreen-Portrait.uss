@@ -1,0 +1,40 @@
+.chat__container {
+    display: flex;
+    width: 65%;
+    height: 9%;
+    left: 18%;
+    bottom: 15%;
+    position: absolute;
+    scale: 0.8 0.8;
+}
+
+.title__container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 27%;
+    top: 10%;
+}
+
+.play-level__container {
+    position: absolute;
+    top: 34%;
+    -unity-background-scale-mode: scale-and-crop;
+    background-color: rgb(77, 77, 77);
+    justify-content: flex-end;
+    width: 50%;
+    height: 39%;
+    align-items: center;
+    left: 25%;
+}
+
+.home-screen__background {
+    background-image: url('project://database/Assets/UI/Textures/Misc/HomeScreenBackground.png?fileID=21300000&guid=c1ffb0bb8a98fad48ad921cedaf52e2e&type=3#HomeScreenBackground');
+    -unity-background-scale-mode: scale-and-crop;
+    left: -124%;
+    width: 400%;
+    height: 3626%;
+    top: 0;
+    rotate: 0;
+    -unity-background-image-tint-color: rgb(171, 172, 173);
+}

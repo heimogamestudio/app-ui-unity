@@ -1,0 +1,453 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SettingsTable_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: dade14b2149874cc188fc560cf8f29d8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1830770696192
+    m_Localized: Musikvolumen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1870314594304
+    m_Localized: Lydvolumen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1878497681408
+    m_Localized: "M\xE5lfrekvens"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478749429587968
+    m_Localized: Maks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2233855893504
+    m_Localized: Afkrydsningsfelt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2252730261504
+    m_Localized: Spillernavn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2386939600896
+    m_Localized: Konto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2480212533248
+    m_Localized: Nulstil niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2581387534336
+    m_Localized: Nulstil valuta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1899318206464
+    m_Localized: Tema
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476952254210048
+    m_Localized: Standard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476985498263552
+    m_Localized: Halloween
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477015936327680
+    m_Localized: Jul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1874093662208
+    m_Localized: "Fps-t\xE6ller"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477196048130048
+    m_Localized: "T\xE6ndt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 477945775775744
+    m_Localized: Slukket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21377310720
+    m_Localized: Sprog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482007850147840
+    m_Localized: Engelsk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482054406922240
+    m_Localized: Dansk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482117585723392
+    m_Localized: Spansk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482163551100928
+    m_Localized: Fransk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5962506102104064
+    m_Localized: Indstillinger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964322869075968
+    m_Localized: Hjem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964384655368192
+    m_Localized: Helte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964407635959808
+    m_Localized: Ressourcer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964432071974912
+    m_Localized: Butik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5964450430443520
+    m_Localized: Post
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5966959018500096
+    m_Localized: Spil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5966988399599616
+    m_Localized: Niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6117969045217280
+    m_Localized: Dragens Hule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153065827655680
+    m_Localized: Ressourcer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153195121270784
+    m_Localized: "Oplev UI Toolkit-l\xF8sninger og -arbejdsgange i vores gratis e-bog"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153262058168320
+    m_Localized: "F\xE5 e-bogen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153414135242752
+    m_Localized: Mere UI-indhold fra Unity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153318945513472
+    m_Localized: Manual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153345629675520
+    m_Localized: Forum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153387891482624
+    m_Localized: Asset Store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6153368325054464
+    m_Localized: Blog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187479865483264
+    m_Localized: Ingen besked valgt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187432310464512
+    m_Localized: "Indl\xF8s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187396377862144
+    m_Localized: Slettet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6187370209599488
+    m_Localized: Indbakke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199224092844032
+    m_Localized: Rabat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6192167281221632
+    m_Localized: Gratis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199112465637376
+    m_Localized: "Mest K\xF8bt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199149585227776
+    m_Localized: Bedste Tilbud
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199980577513472
+    m_Localized: Kraftdrikke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6200181723750400
+    m_Localized: Helbredelsesdrikke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199273661128704
+    m_Localized: "Et par guldm\xF8nter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199404519219200
+    m_Localized: "En stor bunke guldm\xF8nter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199438241423360
+    m_Localized: "En pose fuld af guldm\xF8nter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199491098042368
+    m_Localized: "En kiste med guldm\xF8nter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199927095943168
+    m_Localized: "En pose fuld af \xE6delstene"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199884184018944
+    m_Localized: "Et par \xE6delstene"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6199952576339968
+    m_Localized: "En stor bunke \xE6delstene"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6297508480278528
+    m_Localized: Udstyrsinventar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309153927585792
+    m_Localized: Almindelig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309216842145792
+    m_Localized: "Sj\xE6lden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309247292792832
+    m_Localized: Speciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309275289772032
+    m_Localized: Alle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309045907480576
+    m_Localized: Alle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309305736224768
+    m_Localized: "V\xE5ben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309338455990272
+    m_Localized: Skjold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309367530905600
+    m_Localized: Hjelm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309398291931136
+    m_Localized: "St\xF8vler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6309426343436288
+    m_Localized: Handsker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315048011030528
+    m_Localized: Stats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315080336531456
+    m_Localized: Evner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315104374087680
+    m_Localized: Bio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315225115516928
+    m_Localized: "Opgrad\xE9r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315248591036416
+    m_Localized: Fjern udstyr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6315128545861632
+    m_Localized: Auto-udstyr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6920435546447872
+    m_Localized: Paladin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6920577112596480
+    m_Localized: Troldmand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7048026030858240
+    m_Localized: Barbarian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7048384320888832
+    m_Localized: Necromancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052242984099840
+    m_Localized: Almindelig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052367135498240
+    m_Localized: "Sj\xE6lden"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7052321920901120
+    m_Localized: Speciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062895983583232
+    m_Localized: Magi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062891260796928
+    m_Localized: "R\xE6kkevidde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7062893907402752
+    m_Localized: "N\xE6rkamp"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229870013669376
+    m_Localized: Knoglernes Herre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229777718009856
+    m_Localized: "Under en Fuldm\xE5ne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229742183866368
+    m_Localized: Historien om Heksen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229657865773056
+    m_Localized: Den Hellige Ridder af Kongeriget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241299408183296
+    m_Localized: "Grundl\xE6ggende angreb"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241336636825600
+    m_Localized: Mellem angreb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7241382312796160
+    m_Localized: Avanceret angreb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280168564416512
+    m_Localized: "\xD8ksehug"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280171181662208
+    m_Localized: Skjoldknuser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280172997795840
+    m_Localized: "Bers\xE6rkerrasen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280174600019968
+    m_Localized: "Sv\xE6rdhug"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280176390987776
+    m_Localized: Tilkald Elementar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280177808662528
+    m_Localized: "Kraftens H\xE6nder"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280179318611968
+    m_Localized: Magisk Lyn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280180828561408
+    m_Localized: Ildkugle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7280182250430464
+    m_Localized: "Tilintetg\xF8relsessf\xE6re"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7314553179201536
+    m_Localized: <color=#775027>Rang {0}</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7314598947446784
+    m_Localized: "N\xE6ste rang ved <color=#775027>niveau {0}</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7359834620944384
+    m_Localized: Giver <color=#775027>{0} skadepoint</color> til en fjende hvert
+      <color=#775027>{1} sekund</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411562842152960
+    m_Localized: "Utilstr\xE6kkelige midler til <color=#F8BB19>{0}</color>. K\xF8b
+      mere <color=#F8BB19>{1}</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411606907510784
+    m_Localized: <color=#F8BB19>{0}</color> udstyret.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411614566309888
+    m_Localized: "<color=#F8BB19>{0}</color> tilf\xF8jet til inventar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411617997250560
+    m_Localized: "<color=#F8BB19>{0} {1}{2}</color> tilf\xF8jet til inventar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7411611013734400
+    m_Localized: "Utilstr\xE6kkelige potioner til at stige i niveau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7430279634345984
+    m_Localized: Velkommen <color=#F8BB19>{0}</color>!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fcc1d32b0487864479ccdee47e89249b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Resources/GameData/Equipment/EquipmentSpecialHat.asset
+  uploadId: 714966

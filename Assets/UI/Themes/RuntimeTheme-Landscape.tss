@@ -1,0 +1,31 @@
+@import url("RuntimeTheme-Default.tss");
+
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/MenuBar-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/HomeScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/CharScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/CharStats-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/InfoScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/ShopScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/SettingsScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/MailScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/InventoryScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/GameScreen-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/MainMenu-Landscape.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Landscape/PopUpText-Landscape.uss");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VisualElement {}

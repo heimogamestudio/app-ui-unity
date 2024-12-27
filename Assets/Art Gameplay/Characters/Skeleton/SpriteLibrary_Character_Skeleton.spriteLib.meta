@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 98d3d47acab6b3c4f994fd8340532709
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: db2778f6d440c47ddacff25997d7c062, type: 3}
+  primaryLibrary: {instanceID: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Art Gameplay/Characters/Skeleton/SpriteLibrary_Character_Skeleton.spriteLib
+  uploadId: 714966

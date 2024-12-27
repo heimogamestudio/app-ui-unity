@@ -1,0 +1,151 @@
+.header__panel-banner {
+    width: 100%;
+    height: 75%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1212020080745325459&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Header_bg_01");
+    padding-bottom: 3%;
+    margin-bottom: -1%;
+}
+
+.header__panel-text-med {
+    font-size: 85px;
+    position: absolute;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+}
+
+.header__power-icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 31%;
+    top: 15%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1254253113087669387&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#icon_power");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.header__power-panel {
+    height: 56%;
+    -unity-text-align: middle-center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory__slot-button {
+    left: -1%;
+    top: -1%;
+    -unity-background-scale-mode: stretch-to-fill;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    height: 90%;
+}
+
+.inventory__slot-button:hover {
+    background-color: rgba(255, 205, 37, 0.45);
+}
+
+.inventory__slot-button:active {
+    background-color: rgba(255, 255, 255, 0);
+    -unity-background-image-tint-color: rgb(243, 156, 18);
+}
+
+.char__next-last-button {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.char__next-last-button:hover {
+    -unity-background-image-tint-color: rgb(230, 126, 34);
+    -unity-background-scale-mode: scale-to-fit;
+    scale: 1.05 1.05;
+}
+
+.char__next-last-button:active {
+    background-color: rgb(255, 255, 255);
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: rgb(255, 184, 102);
+}
+
+.footer__potion-count {
+    position: relative;
+    -unity-text-align: middle-right;
+    width: auto;
+    height: 100%;
+    color: rgb(209, 243, 123);
+    flex-basis: 60%;
+}
+
+.footer__potion-to-advance {
+    flex-basis: auto;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    position: absolute;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+}
+
+.footer__equip-button {
+    left: 0;
+    position: relative;
+    width: 16%;
+    flex-basis: 26%;
+    -unity-text-align: middle-center;
+    justify-content: center;
+    padding-bottom: 2%;
+    max-height: 100px;
+    min-height: 70px;
+    bottom: -27%;
+    height: 40%;
+}
+
+.footer__level-up-button {
+    position: relative;
+    top: 28%;
+    width: 35%;
+    min-width: 35%;
+    min-height: 95px;
+    height: 45%;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__level-up-button:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.footer__level-up-button--inactive {
+    -unity-background-image-tint-color: rgb(144, 144, 144);
+    color: rgb(220, 220, 220);
+}
+
+.footer__level-up-text {
+    font-size: 70px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.54);
+    display: flex;
+    top: -31%;
+    position: absolute;
+    height: 100%;
+    width: 88%;
+    right: 1%;
+}
+
+.level-up-button-vfx {
+    background-image: url("project://database/Assets/UI/Textures/RenderTextures/VFXRenderTexture.renderTexture?fileID=8400000&guid=9ee6b38a810bc1c47bea7f1c5017238b&type=2#VFXRenderTexture");
+    opacity: 0.96;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    position: absolute;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(243, 243, 243, 0);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dbca72ee75cd69241a21e6ce71fd1920
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/FX/CoinGemMagnet/ObjectPool/Data_ObjectPool_GoldMagnetFX.asset
+  uploadId: 714966

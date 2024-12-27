@@ -1,0 +1,190 @@
+.home-chat__container {
+    position: absolute;
+    bottom: 17%;
+}
+
+.play-level__banner {
+    top: -6%;
+    position: relative;
+    width: 83%;
+    height: 15%;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4117160685329014779&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Header_bg_02');
+    -unity-text-align: middle-center;
+    padding-bottom: 3%;
+}
+
+.play-level__name {
+    color: rgb(254, 240, 220);
+    width: 100%;
+    -unity-text-align: upper-center;
+    background-color: rgba(0, 0, 0, 0.79);
+    height: 15%;
+    padding-top: 3%;
+}
+
+.play-level__button {
+    height: auto;
+    flex-basis: 45%;
+    width: 68%;
+    margin-bottom: 3%;
+}
+
+.play-level__frame {
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6465899754313300131&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#frame_01');
+    background-color: rgba(44, 62, 80, 0);
+    -unity-background-scale-mode: stretch-to-fill;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.title__subtitle {
+    width: 45%;
+    height: 20%;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url('project://database/Assets/UI/Textures/Misc/UIToolkitSample.png?fileID=21300000&guid=3a766affcd6a647049caeac02520acc3&type=3#UIToolkitSample');
+    translate: 0 27px;
+    position: absolute;
+    bottom: 19%;
+}
+
+.title__graphic--default {
+    height: 100%;
+    bottom: 22%;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=7092703706131164029&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#DC_logo');
+    -unity-background-scale-mode: scale-to-fit;
+    justify-content: flex-end;
+}
+
+.title__graphic--xmas {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3258756428828029577&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#DC_logo_christmas');
+    left: -0.5%;
+    width: 100%;
+    height: 100%;
+    top: -14.5%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.title__graphic--halloween {
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1440833723280209291&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#DC_logo_halloween');
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: -15%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.chat__panel-icon {
+    width: 87px;
+    height: 68px;
+    left: 4%;
+    top: 23%;
+}
+
+.chat__panel-text {
+    flex-basis: 70%;
+    flex-grow: 3;
+    background-color: rgba(149, 165, 166, 0.25);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-wrap: nowrap;
+    font-size: 25px;
+    white-space: normal;
+    color: rgb(255, 255, 255);
+}
+
+.chat__panel-bg {
+    opacity: 1;
+    flex-grow: 0;
+    height: 94%;
+    width: 100%;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=538741276683817778&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_01');
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 0;
+}
+
+.chat__panel-parent {
+    background-image: none;
+    margin-bottom: -12px;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 165px;
+    -unity-background-scale-mode: stretch-to-fill;
+    align-items: center;
+    bottom: 0;
+}
+
+.decoration__xmas--left {
+    position: absolute;
+    width: 81px;
+    height: 104px;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-963673561422133642&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Christmas_Deco_02');
+    top: 3px;
+    left: 3px;
+}
+
+.decoration__xmas--right {
+    position: absolute;
+    width: 83px;
+    height: 81px;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=2660789243780174224&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Christmas_Deco_01');
+    top: -3px;
+    right: -3px;
+    scale: -1 -1;
+    rotate: -23deg;
+    translate: -7px 0;
+}
+
+.decoration__halloween--left {
+    position: absolute;
+    width: 81px;
+    height: 93px;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1596050124531588824&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#halloween_deco_02');
+    top: 20px;
+    left: 22px;
+}
+
+.decoration__xmas--right {
+    position: absolute;
+    width: 83px;
+    height: 81px;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=2660789243780174224&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Christmas_Deco_01');
+    top: -3px;
+    right: -3px;
+    scale: -1 -1;
+    rotate: -23deg;
+    translate: -7px 0;
+}
+
+.decoration__halloween--right {
+    position: absolute;
+    width: 83px;
+    height: 81px;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1596050124531588824&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#halloween_deco_02');
+    top: 17px;
+    right: 20px;
+    scale: 1 1;
+    rotate: 90deg;
+    translate: 0 0;
+}
+
+.home__screen {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}

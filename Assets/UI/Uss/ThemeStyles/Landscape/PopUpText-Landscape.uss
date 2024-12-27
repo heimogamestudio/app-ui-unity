@@ -1,0 +1,29 @@
+.popup-text-active--reward {
+    opacity: 1;
+    left: 37%;
+    top: 6%;
+    transition-property: opacity;
+    max-width: 85%;
+    -unity-text-align: upper-center;
+    min-width: 85%;
+    width: 85%;
+    transition-duration: 0.25s;
+    max-height: 50%;
+    height: 30%;
+    min-height: 30%;
+}
+
+.popup-text-inactive--reward {
+    opacity: 0;
+    left: 37%;
+    top: 6%;
+    transition-property: opacity;
+    max-width: 85%;
+    -unity-text-align: upper-center;
+    min-width: 85%;
+    width: 85%;
+    transition-duration: 0.25s;
+    max-height: 50%;
+    height: 30%;
+    min-height: 30%;
+}

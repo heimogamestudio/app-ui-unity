@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b37f973db2cc442efbc8b77b3231ca34
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Localization/AssetTables/FlagIconTable_fr.asset
+  uploadId: 714966

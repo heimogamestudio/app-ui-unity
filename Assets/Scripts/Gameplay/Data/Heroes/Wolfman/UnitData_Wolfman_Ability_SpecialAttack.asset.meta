@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: de666eb15cd2a6f41a63316dc38c3b3a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Heroes/Wolfman/UnitData_Wolfman_Ability_SpecialAttack.asset
+  uploadId: 714966

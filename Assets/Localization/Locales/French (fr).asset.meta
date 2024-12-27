@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d22d70d8b56441f59232b89d8f190c5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Localization/Locales/French (fr).asset
+  uploadId: 714966

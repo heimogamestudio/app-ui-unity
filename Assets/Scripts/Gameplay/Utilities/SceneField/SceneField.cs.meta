@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c92297d8df4f62c4ab53a81ef4390c3f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Utilities/SceneField/SceneField.cs
+  uploadId: 714966

@@ -1,0 +1,222 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Sliders.uss?fileID=7433441132597879392&amp;guid=4367864dd329043c0bbcdd5f56c172e7&amp;type=3#Sliders" />
+    <Style src="project://database/Assets/UI/Uss/Screens/CharStats.uss?fileID=7433441132597879392&amp;guid=d6bbf61c44c882d44b0598afa867ae8c&amp;type=3#CharStats" />
+    <Style src="project://database/Assets/UI/Uss/Screens/CharScreen.uss?fileID=7433441132597879392&amp;guid=9c0dd22ea80abf041b8a62ec3ab2daa0&amp;type=3#CharScreen" />
+    <ui:VisualElement name="char-data__screen" picking-mode="Ignore" class="screen__anchor--center" style="top: -1px; left: -1px;">
+        <ui:VisualElement name="char-data__container" class="char-data__container">
+            <ui:VisualElement name="char-data-tabs" class="char-data__tabs">
+                <ui:VisualElement name="char-data-stats-chartab" class="chartab selected-chartab" style="flex-basis: 33%; align-items: center; justify-content: center;">
+                    <ui:Label text="Stats" display-tooltip-when-elided="true" name="char-data-stats-label" picking-mode="Ignore" class="char-data__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6315048011030528)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-data-skills-chartab" class="chartab" style="flex-basis: 33%; align-items: center; justify-content: center; display: flex;">
+                    <ui:Label text="Skills" display-tooltip-when-elided="true" name="char-data__skills-label" picking-mode="Ignore" class="char-data__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6315080336531456)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-data-bio-chartab" class="chartab" style="flex-basis: 33%; justify-content: center; align-items: center;">
+                    <ui:Label text="Bio" display-tooltip-when-elided="true" name="char-data__bio-label" picking-mode="Ignore" class="char-data__label">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6315104374087680)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="char-data-content" class="char-data__content">
+                <ui:VisualElement name="char-data-stats-content" class="char-data__stats-charcontent">
+                    <ui:VisualElement name="char-stats__header" picking-mode="Ignore" class="char-stats__header">
+                        <ui:Label display-tooltip-when-elided="true" name="char-stats__level-group" style="-unity-font-style: normal; font-size: 80px; justify-content: center; -unity-text-align: middle-center; color: rgb(118, 80, 39); text-shadow: 5px 5px 3px rgb(157, 127, 91); width: 40%; height: 100%; flex-direction: row;">
+                            <ui:Label text="Level" display-tooltip-when-elided="true" name="char-stats__level-prefix" style="-unity-font-style: normal; font-size: 80px; justify-content: flex-start; -unity-text-align: middle-left; color: rgb(118, 80, 39); text-shadow: 5px 5px 3px rgb(157, 127, 91); position: relative;">
+                                <Bindings>
+                                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(5966988399599616)" />
+                                </Bindings>
+                            </ui:Label>
+                            <ui:Label text="1" display-tooltip-when-elided="true" name="char-stats__level-number" style="-unity-font-style: normal; font-size: 80px; justify-content: flex-start; -unity-text-align: middle-left; color: rgb(118, 80, 39); text-shadow: 5px 5px 3px rgb(157, 127, 91); position: relative; top: 0; left: 5%;">
+                                <Bindings>
+                                    <ui:DataBinding property="text" data-source-path="CurrentLevel" data-source-type="UIToolkitDemo.CharacterData, Assembly-CSharp" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:Label>
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="char-stats__subheader" picking-mode="Ignore" style="flex-grow: 0; flex-basis: 28%; align-items: center; position: relative; width: 100%; left: 0; top: 0; justify-content: center;">
+                        <ui:VisualElement name="char-stats__middle" data-source="project://database/Assets/Resources/GameData/GameIcons.asset?fileID=11400000&amp;guid=cb21b644e0126334d8f6fe7174fc783d&amp;type=2#GameIcons" style="width: 85%; flex-direction: row; height: 90%; justify-content: space-between;">
+                            <ui:VisualElement name="char-stats__class" class="char-stats__class-group" style="align-items: center; flex-basis: 33%;">
+                                <ui:VisualElement name="char-stats__class-background" class="char-stats__crest" style="align-items: center; justify-content: center; width: 100%; height: 75%;">
+                                    <ui:VisualElement name="char-stats__class-icon" style="width: 60%; height: 60%; align-items: center; justify-content: center; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2770413777280868161&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_char_class_03&quot;); -unity-background-scale-mode: scale-to-fit;">
+                                        <Bindings>
+                                            <ui:DataBinding property="style.backgroundImage" data-source-path="CharacterClassIcon" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:Label text="Class" display-tooltip-when-elided="true" name="char-stats__class-label" class="char-stats__class-label" style="height: 25%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="char-stats__rarity" class="char-stats__class-group" style="flex-basis: 30%; justify-content: center;">
+                                <ui:VisualElement name="char-stats__rarity-background" class="char-stats__crest" style="width: 100%; height: 75%; align-items: center; justify-content: center;">
+                                    <ui:VisualElement name="char-stats__rarity-icon" style="width: 60%; height: 60%; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-8627399951371066753&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_rarity_01&quot;); -unity-background-scale-mode: scale-to-fit;">
+                                        <Bindings>
+                                            <ui:DataBinding property="style.backgroundImage" data-source-path="RarityIcon" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:Label text="Rarity" display-tooltip-when-elided="true" name="char-stats__rarity-label" class="char-stats__class-label" style="height: 25%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="char-stats__attack-type" class="char-stats__class-group" style="flex-basis: 33%; justify-content: center;">
+                                <ui:VisualElement name="char-stats__attack-type-background" class="char-stats__crest" style="width: 100%; height: 75%; align-items: center; justify-content: center;">
+                                    <ui:VisualElement name="char-stats__attack-type-icon" style="width: 60%; height: 60%; -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-5048415128929058164&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_attack_type_01&quot;);">
+                                        <Bindings>
+                                            <ui:DataBinding property="style.backgroundImage" data-source-path="AttackTypeIcon" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:Label text="Type" display-tooltip-when-elided="true" name="char-stats__attack-type-label" class="char-stats__class-label" style="height: 25%; white-space: normal; -unity-text-align: upper-center; width: 100%;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="char-stats__body" picking-mode="Ignore" style="flex-grow: 0; flex-basis: 55%; align-items: center; position: relative; width: 100%; left: 0; top: 5%; justify-content: flex-start;">
+                        <ui:VisualElement name="char-stats__border" style="height: 83%; width: 82%; align-items: center; justify-content: center; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6939680958470395103&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Frame_03&quot;); padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%;">
+                            <ui:VisualElement name="char-stats__row1" style="flex-basis: 30%; width: 90%; justify-content: center; flex-direction: row;">
+                                <ui:VisualElement name="char-stats__life" style="flex-basis: 50%; flex-direction: row;">
+                                    <ui:VisualElement name="char-stats-life-icon" class="char-stats__icon" />
+                                    <ui:Label text="999" display-tooltip-when-elided="true" name="char-stats__life-value" class="char-stats__value">
+                                        <Bindings>
+                                            <ui:DataBinding property="text" data-source-path="BasePointsLife" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:Label>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="char-stats__defense" style="flex-basis: 50%; left: 5%; flex-direction: row;">
+                                    <ui:VisualElement name="char-stats-defense-icon" class="char-stats__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-757258192580813649&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_defense&quot;);" />
+                                    <ui:Label text="999" display-tooltip-when-elided="true" name="char-stats__defense-value" class="char-stats__value" style="margin-left: 25px;">
+                                        <Bindings>
+                                            <ui:DataBinding property="text" data-source-path="BasePointsDefense" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:Label>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="char-stats__row2" style="flex-basis: 30%; width: 90%; justify-content: center; flex-direction: row;">
+                                <ui:VisualElement name="char-stats__attack" style="flex-basis: 50%; flex-direction: row;">
+                                    <ui:VisualElement name="char-stats-attack-icon" class="char-stats__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-6397773393893038935&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_attack&quot;);" />
+                                    <ui:Label text="999" display-tooltip-when-elided="true" name="char-stats__attack-value" class="char-stats__value" style="margin-left: 25px;">
+                                        <Bindings>
+                                            <ui:DataBinding property="text" data-source-path="BasePointsAttack" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:Label>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="char-stats__attackSpeed" style="flex-basis: 50%; left: 5%; flex-direction: row;">
+                                    <ui:VisualElement name="char-stats-attackSpeed-icon" class="char-stats__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3622727970876862835&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_critical&quot;);" />
+                                    <ui:Label text="0.1/s" display-tooltip-when-elided="true" name="char-stats__attack-speed-value" class="char-stats__value" style="margin-left: 25px;">
+                                        <Bindings>
+                                            <ui:DataBinding property="text" data-source-path="BasePointsAttackSpeed" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:Label>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="char-stats-row3" style="flex-basis: 30%; width: 90%; justify-content: center; flex-direction: row;">
+                                <ui:VisualElement name="char-stats__specialAttack" style="flex-basis: 50%; flex-direction: row;">
+                                    <ui:VisualElement name="char-stats-specialAttackicon" class="char-stats__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1897625073742366691&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_speed&quot;);" />
+                                    <ui:Label text="2/s" display-tooltip-when-elided="true" name="char-stats__special-attack-value" class="char-stats__value" style="margin-left: 25px;">
+                                        <Bindings>
+                                            <ui:DataBinding property="text" data-source-path="BasePointsSpecialAttack" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:Label>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="char-stats__criticalHit" style="flex-basis: 50%; left: 5%; flex-direction: row;">
+                                    <ui:VisualElement name="char-stats-criticalHit-icon" class="char-stats__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-3068258575752004895&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_stat_ultimate&quot;);" />
+                                    <ui:Label text="999" display-tooltip-when-elided="true" name="char-stats__critical-hit-value" class="char-stats__value" style="margin-left: 25px;">
+                                        <Bindings>
+                                            <ui:DataBinding property="text" data-source-path="BasePointsCriticalHit" binding-mode="ToTarget" />
+                                        </Bindings>
+                                    </ui:Label>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-data-skills-content" class="unselected-charcontent" style="width: 100%; height: 100%; position: absolute; left: 1px; top: 2px; align-items: center; justify-content: flex-start; -unity-font-style: bold; font-size: 64px;">
+                    <ui:VisualElement name="char-skills__separator" style="position: absolute; width: 90%; height: 5px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=4741866854477739035&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Separator_02&quot;); -unity-background-scale-mode: stretch-to-fill; top: 32%;" />
+                    <ui:VisualElement name="char-skills__header" style="width: 85%; flex-basis: 31%; flex-direction: row; height: 100%;">
+                        <ui:VisualElement name="char-skills__slot1" picking-mode="Ignore" style="flex-basis: 33%; align-items: center; justify-content: center;">
+                            <ui:VisualElement name="char-skills__icon1" class="cursor-b" style="width: 150px; height: 150px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6465899754313300131&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#frame_01&quot;); align-items: center; justify-content: center;">
+                                <Bindings>
+                                    <ui:DataBinding property="style.backgroundImage" data-source-path="Skill1Icon" data-source-type="UIToolkitDemo.CharacterBaseSO, Assembly-CSharp" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="char-skills__slot2" picking-mode="Ignore" style="flex-basis: 33%; align-items: center; justify-content: center;">
+                            <ui:VisualElement name="char-skills__icon2" class="cursor-b" style="width: 150px; height: 150px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6465899754313300131&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#frame_01&quot;);">
+                                <Bindings>
+                                    <ui:DataBinding property="style.backgroundImage" data-source-path="Skill2Icon" data-source-type="UIToolkitDemo.CharacterBaseSO, Assembly-CSharp" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="char-skills__slot3" picking-mode="Ignore" style="flex-basis: 33%; align-items: center; justify-content: center;">
+                            <ui:VisualElement name="char-skills__icon3" class="cursor-b" style="width: 150px; height: 150px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6465899754313300131&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#frame_01&quot;);">
+                                <Bindings>
+                                    <ui:DataBinding property="style.backgroundImage" data-source-path="Skill3Icon" data-source-type="UIToolkitDemo.CharacterBaseSO, Assembly-CSharp" binding-mode="ToTarget" />
+                                </Bindings>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="char-skills__active" picking-mode="Ignore" style="width: 184px; height: 195px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=388259727027779221&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Frame_skill_selected&quot;); position: absolute; -unity-background-scale-mode: scale-to-fit; left: -8px; top: 9px; transform-origin: left top;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="char-skills__body" style="flex-basis: 61%; width: 100%; align-items: center; top: 5%;">
+                        <ui:Label text="Skill Name" display-tooltip-when-elided="true" name="char-skills__label" style="font-size: 60px; color: rgb(118, 80, 39); -unity-font-style: normal; -unity-text-align: lower-center;">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="SkillName" data-source-type="UIToolkitDemo.SkillSO, Assembly-CSharp" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:Label text="Description" display-tooltip-when-elided="true" name="char-skills__category-label" style="font-size: 40px; color: rgb(140, 129, 103); -unity-font-style: normal; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; top: -4%;">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="CategoryText" data-source-type="UIToolkitDemo.SkillSO, Assembly-CSharp" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="char-skills__details" style="flex-basis: 38%; width: 100%; flex-direction: row; justify-content: space-around;">
+                            <ui:VisualElement name="char-skills__last-button" style="flex-basis: 15%; align-items: flex-end; justify-content: center;">
+                                <ui:Button text="&#10;" display-tooltip-when-elided="true" name="char-skills__last-button" class="char-data__skill-next-last-button" style="width: 70px; height: 70px; left: -8%; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3631226721192414999&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bt_07&quot;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(188, 188, 188, 0);" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="char-skills__tier-button" style="flex-basis: 68%; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=2841462034448977479&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Frame_02&quot;); padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 111%;">
+                                <ui:Label text="Tier 1" display-tooltip-when-elided="true" name="char-skills__tier-label" style="font-size: 40px; color: rgb(233, 224, 200); -unity-font-style: normal; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: center; -unity-text-align: upper-center;">
+                                    <Bindings>
+                                        <ui:DataBinding property="text" data-source-path="TierText" data-source-type="UIToolkitDemo.SkillSO, Assembly-CSharp" binding-mode="ToTarget" />
+                                    </Bindings>
+                                </ui:Label>
+                                <ui:Label text="Deal x Damage points to enemy every x seconds" display-tooltip-when-elided="true" name="char-skills__tier-damage-label" style="font-size: 27px; flex-basis: 75%; flex-wrap: wrap; white-space: normal; padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 3%; -unity-font-style: normal; color: rgb(163, 137, 103);">
+                                    <Bindings>
+                                        <ui:DataBinding property="text" data-source-path="DamageText" data-source-type="UIToolkitDemo.SkillSO, Assembly-CSharp" binding-mode="ToTarget" />
+                                    </Bindings>
+                                </ui:Label>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="char-skills__next" style="flex-basis: 15%; justify-content: center; align-items: flex-start; -unity-text-align: lower-left;">
+                                <ui:Button text="&#10;" display-tooltip-when-elided="true" name="char-skills__next-button" class="char-data__skill-next-button char-data__skill-next-last-button" style="scale: -1 1;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:Label text="Next tier at Level X" display-tooltip-when-elided="true" name="char-skills__next-tier-label" style="font-size: 35px; top: 5%; color: rgb(163, 137, 103); -unity-font-style: normal;">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="NextTierLevelText" data-source-type="UIToolkitDemo.SkillSO, Assembly-CSharp" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-data-bio-content" class="unselected-charcontent" style="width: 93%; height: 86%; position: absolute; left: 2%; top: 2%; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="char-bio__header" style="flex-grow: 0; flex-basis: 16%; align-items: center; position: relative; width: 100%; left: 4px; top: 0; justify-content: center;">
+                        <ui:Label text="The title of the biography" display-tooltip-when-elided="true" name="char-bio__title" style="-unity-font-style: normal; font-size: 32px; justify-content: flex-start; -unity-text-align: middle-center; color: rgb(118, 80, 39);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="char-bio__tracker" class="char-bio__tracker" style="display: none; right: -4%;" />
+                    <ui:ScrollView name="char-bio__scrollview" vertical-scroller-visibility="AlwaysVisible" horizontal-scroller-visibility="Hidden" style="height: 90%; width: 100%; position: relative; left: 1%; top: 4%; flex-basis: 76%; -unity-font-style: bold; display: flex;">
+                        <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n&#10;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n&#10;Duis aute irurrsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et &lt;b&gt;dolore &lt;/b&gt;magna aliqua. \n&#10;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n&#10;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n&#10;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." display-tooltip-when-elided="true" name="char-bio__text" style="width: 94%; height: 100%; white-space: normal; font-size: 24px; color: rgb(118, 80, 39); -unity-font-style: normal; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; left: 4%;">
+                            <Bindings>
+                                <ui:DataBinding property="text" data-source-path="Bio" data-source-type="UIToolkitDemo.CharacterBaseSO, Assembly-CSharp" binding-mode="ToTarget" />
+                            </Bindings>
+                        </ui:Label>
+                    </ui:ScrollView>
+                    <ui:VisualElement name="char-bio__separator1" style="height: 3px; width: 95%; position: absolute; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=4741866854477739035&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Separator_02&quot;); top: 20%;" />
+                    <ui:VisualElement name="char-bio__separator2" style="height: 3px; width: 95%; position: absolute; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=4741866854477739035&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Separator_02&quot;); bottom: -9%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

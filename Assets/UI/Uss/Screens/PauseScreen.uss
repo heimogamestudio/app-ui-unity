@@ -1,0 +1,167 @@
+.pause__screen {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.pause__background {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}
+
+.pause__container {
+    background-color: rgba(41, 128, 185, 0);
+    width: 750px;
+    height: 620px;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4040379037015584800&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_02");
+}
+
+.pause__header {
+    position: absolute;
+    top: 0;
+    height: 113px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pause__body {
+    align-items: center;
+    height: 490px;
+    position: absolute;
+    top: 90px;
+    width: 94%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pause__label {
+    width: 100%;
+    height: 100%;
+    -unity-text-align: middle-center;
+    color: rgb(253, 240, 219);
+    font-size: 47px;
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1");
+    -unity-text-outline-color: rgb(255, 255, 255);
+}
+
+.pause__resume-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 90px;
+    -unity-font-style: normal;
+    font-size: 39px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    background-color: rgba(243, 156, 18, 0);
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1");
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4355731583856638786&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_08");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+    transition-duration: 0.25s;
+}
+
+.pause__resume-button:hover {
+    background-color: rgba(241, 196, 15, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+    transition-duration: 0.25s;
+    scale: 1.1 1.1;
+}
+
+.pause__resume-button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    scale: 1.1 1.1;
+    transition-duration: 0.2s;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+}
+
+.unity-slider__label {
+    position: absolute;
+    left: -193px;
+    color: rgb(141, 91, 38);
+    top: -50%;
+}
+
+.pause__slider {
+    height: 8%;
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    -unity-font-style: normal;
+    font-size: 40px;
+    -unity-text-align: upper-left;
+    color: rgb(141, 91, 38);
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=4e008579d9e985040974fa631b2f2b80&type=2#ChelaOne-Regular SDF 1");
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    left: 15%;
+    top: 0;
+}
+
+#unity-dragger {
+    width: 50px;
+    height: 50px;
+    max-height: 60px;
+    max-width: 60px;
+}
+
+#unity-tracker {
+    min-height: 24px;
+    max-height: 24px;
+    height: 24px;
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+}
+
+.pause__quit-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7887511337294979362&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_12");
+}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d2327bf4f5626549bcdad1296a34acd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Heroes/Knight/UnitData_Knight_Info_Jarek.asset
+  uploadId: 714966

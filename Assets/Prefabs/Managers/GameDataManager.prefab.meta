@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7dff5f0e54f4640feac7decd5d8b52f1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/Managers/GameDataManager.prefab
+  uploadId: 714966

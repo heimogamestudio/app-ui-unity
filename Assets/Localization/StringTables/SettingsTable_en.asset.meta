@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d34fb2ae76e9d46f3a97b32d16def27c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Localization/StringTables/SettingsTable_en.asset
+  uploadId: 714966

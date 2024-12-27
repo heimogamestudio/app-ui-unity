@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 43cd23c2ca665964da65df68923fbe0f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/ScriptableObjects/GameIconsSO.cs
+  uploadId: 714966

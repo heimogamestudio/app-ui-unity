@@ -1,0 +1,41 @@
+.back-button {
+    width: 9%;
+    height: 75%;
+    background-image: none;
+    align-items: flex-end;
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(113, 11, 11, 0);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.back-button:hover {
+    scale: 1.1 1.1;
+    transition-duration: 0.25s;
+}
+
+.back-button:active {
+    -unity-background-image-tint-color: rgb(176, 176, 176);
+}
+
+.back-button-icon {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=8895885118603013600&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#icon_close");
+    width: 75%;
+    height: 75%;
+    -unity-background-scale-mode: scale-to-fit;
+    top: 12.5%;
+    right: 12.5%;
+}

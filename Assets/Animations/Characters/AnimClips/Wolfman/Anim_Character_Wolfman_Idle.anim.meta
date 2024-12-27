@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aff17b249c1364f40bb72e00fb1a5a77
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Animations/Characters/AnimClips/Wolfman/Anim_Character_Wolfman_Idle.anim
+  uploadId: 714966

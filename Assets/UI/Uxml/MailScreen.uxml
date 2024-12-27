@@ -1,0 +1,71 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="MailMessage" src="project://database/Assets/UI/Uxml/Resources/MailMessage.uxml?fileID=9197481963319205126&amp;guid=7d1a1f608c3d1444480ce3389a1babdc&amp;type=3#MailMessage" />
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/SlidersVertical.uss?fileID=7433441132597879392&amp;guid=49db01b2f5b7b45dab9f4ca845496299&amp;type=3#SlidersVertical" />
+    <Style src="project://database/Assets/UI/Uss/Screens/MailScreen.uss?fileID=7433441132597879392&amp;guid=093b19c999c06c04ab4d039b75b38838&amp;type=3#MailScreen" />
+    <ui:VisualElement name="mail__screen" class="screen__anchor--center mail__screen">
+        <ui:VisualElement name="mail__container" picking-mode="Ignore" class="mail-content">
+            <ui:VisualElement name="tabs__container" class="tab__container">
+                <ui:VisualElement name="tabs__inbox-tab" class="selected-mailtab mailtab" style="height: 100%; position: absolute; left: 0; width: 37%; top: 7%; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);">
+                    <ui:Label text="Inbox" display-tooltip-when-elided="true" name="tabs__inbox-tab-label" picking-mode="Ignore" class="mail-panel-tab-label" style="text-shadow: 3px 3px 1px rgb(1, 2, 2);">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6187370209599488)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement name="tabs__deleted-tab" class="mailtab" style="height: 100%; position: absolute; width: 37%; left: 40%; top: 6%; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);">
+                    <ui:Label text="Deleted" display-tooltip-when-elided="true" name="tabs__deleted-tab-label" picking-mode="Ignore" class="mail-panel-tab-label" style="text-shadow: 3px 3px 1px rgb(8, 12, 17);">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6187396377862144)" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="inbox-content" picking-mode="Ignore" class="mailbox__container">
+                <ui:VisualElement name="mailbox__container" picking-mode="Ignore" class="inbox__container" style="background-color: rgba(219, 26, 26, 0);">
+                    <ui:ScrollView name="mailbox__scroll-view" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" picking-mode="Ignore" style="align-items: stretch; height: 95%; top: 2%; left: 2%; display: flex; padding-right: 0; padding-top: 0; margin-top: 10px;">
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                        <ui:Instance template="MailMessage" name="MailMessage" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="content__container" picking-mode="Ignore" class="message__container">
+                    <ui:VisualElement name="content__background" picking-mode="Ignore" class="content__background">
+                        <ui:Label text="Message 1 title" display-tooltip-when-elided="true" name="content__message-subject" class="content__message-subject" />
+                        <ui:VisualElement name="content__message-body" picking-mode="Ignore" class="content__message-body">
+                            <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" horizontal-page-size="-1" vertical-page-size="-1" name="content__scroll-view" style="align-items: center; flex-grow: 1; flex-basis: 79%; margin-bottom: 1%; padding-right: 2%; width: 100%; padding-top: 0; margin-top: 2%; padding-left: 0; padding-bottom: 0; flex-shrink: 0;">
+                                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." display-tooltip-when-elided="true" name="content__message-text" style="width: 100%; height: auto; white-space: normal; -unity-font-style: normal; font-size: 29px; flex-basis: auto; align-items: center; margin-bottom: 39px; padding-left: 12%; padding-right: 15%; color: rgb(163, 137, 103);" />
+                                <ui:VisualElement name="content__message-attachment" style="width: 100%; height: 400px; flex-basis: auto; align-items: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=706818794082692949&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#Bundle_icon_03&quot;);" />
+                            </ui:ScrollView>
+                            <ui:VisualElement name="content__frame" picking-mode="Ignore" style="position: absolute; display: flex; width: 100%; height: 100%; justify-content: flex-end; top: 0; margin-bottom: 1%; margin-left: 0; margin-right: 0; margin-top: 0;">
+                                <ui:VisualElement name="content__frame-bar" picking-mode="Ignore" class="mail-frame_bar--unclaimed mail-frame_bar--claimed" />
+                                <ui:VisualElement name="content__frame-border" picking-mode="Ignore" class="mail-frame_border--unclaimed mail-frame_border--claimed" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="content__footer" picking-mode="Ignore" style="position: relative; display: flex; align-items: center; justify-content: center; background-image: none; -unity-background-image-tint-color: rgb(161, 142, 118); width: 100%; flex-basis: 13%; bottom: 2%; margin-top: 2%;">
+                                <ui:VisualElement name="content__gift-group" picking-mode="Ignore" style="width: 18%; height: 95%; align-items: center; justify-content: space-between; flex-direction: row; bottom: 7%;">
+                                    <ui:VisualElement name="content__gift-icon" picking-mode="Ignore" style="width: 70px; height: 70px; -unity-background-scale-mode: scale-to-fit; flex-basis: 43%; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6161000958321840084&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_soft_currency&quot;);" />
+                                    <ui:Label text="99" display-tooltip-when-elided="true" name="content__gift-amount" picking-mode="Ignore" style="position: relative; -unity-font-style: normal; font-size: 90%; color: rgb(255, 255, 255); flex-basis: 45%; -unity-text-align: middle-left; text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.56); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 100%; left: -12px; top: -8%;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="content__buttons" class="content__buttons">
+                            <ui:Button display-tooltip-when-elided="true" name="content__undelete-button" text="&#10;" class="mail-delete-button" style="background-image: url(&quot;project://database/Assets/UI/Textures/Misc/Undelete.png?fileID=21300000&amp;guid=2709433b36115d040ab3046cfe6377ed&amp;type=3#Undelete&quot;);" />
+                            <ui:Button display-tooltip-when-elided="true" name="content__delete-button" text="&#10;" class="mail-delete-button" />
+                            <ui:Button text="Claim" display-tooltip-when-elided="true" name="content__gift-button" class="mail-gift-button">
+                                <Bindings>
+                                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6187432310464512)" />
+                                </Bindings>
+                            </ui:Button>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="No message selected." display-tooltip-when-elided="true" name="content__no-messages" picking-mode="Ignore" class="mail-no-messages mail-no-messages--inactive" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,85 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/Base/Sliders.uss?fileID=7433441132597879392&amp;guid=4367864dd329043c0bbcdd5f56c172e7&amp;type=3#Sliders" />
+    <Style src="project://database/Assets/UI/Uss/Screens/Inventory.uss?fileID=7433441132597879392&amp;guid=4547e954a2090aa4caefc95123df9c05&amp;type=3#Inventory" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/BackButton.uss?fileID=7433441132597879392&amp;guid=c94195ad6d09744f4a70246bca8d99f2&amp;type=3#BackButton" />
+    <ui:VisualElement name="inventory__screen" picking-mode="Ignore" class="inventory__screen-overlay cursor-a" style="background-color: rgba(0, 0, 0, 0.96); cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_A.png?fileID=2800000&amp;guid=0fc53ad8e877049c3aef54a3f8a1e01a&amp;type=3#Cursor_A&quot;); -unity-background-scale-mode: scale-to-fit; top: 0;">
+        <ui:VisualElement name="inventory__container" picking-mode="Ignore" class="inventory__container">
+            <ui:VisualElement name="inventory__header" class="inventory__header">
+                <ui:Button name="inventory__back-button" class="cursor-b back-button">
+                    <ui:VisualElement name="inventory__back-button-icon" picking-mode="Ignore" class="back-button-icon" />
+                </ui:Button>
+                <ui:Label text="Gear Inventory" display-tooltip-when-elided="true" name="inventory__title" picking-mode="Ignore" class="inventory__title" style="font-size: 63px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; text-shadow: 2px 2px 2px rgb(0, 0, 0); top: 2%;">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6297508480278528)" />
+                    </Bindings>
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="inventory__selection-filters" picking-mode="Ignore" class="inventory__header inventory__selection-filters" style="position: absolute; top: 12%; width: 74%;">
+                <ui:VisualElement name="inventory__rarity-dropdown-group" picking-mode="Ignore" class="inventory__dropdown-group">
+                    <ui:VisualElement name="inventory__rarity-icon-spacer" picking-mode="Ignore" style="width: 100px; height: 100px; justify-content: center; align-items: center;">
+                        <ui:VisualElement name="inventory__rarity-icon" picking-mode="Ignore" class="inventory__icon" style="height: 55px; width: 55px; left: -2%; top: -1%;" />
+                    </ui:VisualElement>
+                    <ui:DropdownField index="0" choices="All,Common,Rare,Special" name="inventory__rarity-dropdown" class="inventory-popup-field-text cursor-b" style="-unity-font-style: normal; font-size: 31px; -unity-text-align: upper-right; width: 243px; height: 61px; top: 18px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="inventory__header-spacer" picking-mode="Ignore" style="width: 34px;" />
+                <ui:VisualElement name="inventory__slot-type-dropdown-group" picking-mode="Ignore" class="inventory__dropdown-group" style="width: 350px; height: 100px; color: rgb(65, 90, 188); flex-direction: row;">
+                    <ui:VisualElement name="inventory__slot-type-icon-spacer" picking-mode="Ignore" style="width: 100px; height: 100px; justify-content: center; align-items: center;">
+                        <ui:VisualElement name="slot-type-icon" picking-mode="Ignore" class="inventory__icon" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-85579336315975520&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_filter&quot;); left: -11%;" />
+                    </ui:VisualElement>
+                    <ui:DropdownField index="0" choices="All,Weapon,Shield,Helmet,Boots,Gloves" name="inventory__slot-type-dropdown" class="inventory-popup-field-text cursor-b" style="-unity-font-style: bold; font-size: 31px; -unity-text-align: upper-right; width: 252px; height: 61px; top: 18px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="inventory__body" picking-mode="Ignore" class="inventory__body" style="position: absolute; height: 70%; top: 24%;">
+                <ui:ScrollView name="inventory__scrollview" horizontal-scroller-visibility="Hidden" picking-mode="Ignore" mode="Horizontal" class="inventory__scrollview">
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                    <ui:VisualElement name="slot" class="inventory__slot" style="flex-direction: row; flex-wrap: wrap;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

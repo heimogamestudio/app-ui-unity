@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 113ae5532974d42a5a476e5b6038f474
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/Cameras/GameCameras.prefab
+  uploadId: 714966

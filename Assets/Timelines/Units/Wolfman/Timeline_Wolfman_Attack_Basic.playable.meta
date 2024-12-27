@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9e815a92cfb0c5f42879d2a7080aa393
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Timelines/Units/Wolfman/Timeline_Wolfman_Attack_Basic.playable
+  uploadId: 714966

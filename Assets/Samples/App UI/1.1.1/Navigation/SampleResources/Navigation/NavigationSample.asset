@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Destination: {fileID: -7065040197925367118}
   m_Options:
     m_PopUpToStrategy: 2
-    m_PopUpToRoute: {fileID: 0}
+    m_PopUpToRoute: {fileID: -7705125689437715372}
     m_PopUpToInclusive: 1
     m_EnterAnim: 0
     m_ExitAnim: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Destination: {fileID: -5972414818343984710}
   m_Options:
     m_PopUpToStrategy: 2
-    m_PopUpToRoute: {fileID: 0}
+    m_PopUpToRoute: {fileID: -7696130718974872040}
     m_PopUpToInclusive: 1
     m_EnterAnim: 0
     m_ExitAnim: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
     m_PopUpToRoute: {fileID: -2729197796917824077}
     m_PopUpToInclusive: 1
     m_EnterAnim: 3
-    m_ExitAnim: 0
+    m_ExitAnim: 1
     m_PopEnterAnim: 0
     m_PopExitAnim: 0
     m_PopUpToSaveState: 0
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac212c624cd4a46acc6d3430ae62e14, type: 3}
   m_Name: auth_graph
   m_EditorClassIdentifier: 
-  m_Position: {x: 1003.5, y: -347.5}
+  m_Position: {x: 1085, y: -466}
   m_Guid: 1b94f20d99ee844e8a76eb70be8bd7d7
   m_Parent: {fileID: -4583345384254747798}
   m_Actions: []
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Destination: {fileID: -292077038807905323}
   m_Options:
     m_PopUpToStrategy: 2
-    m_PopUpToRoute: {fileID: 0}
+    m_PopUpToRoute: {fileID: -7705125689437715372}
     m_PopUpToInclusive: 1
     m_EnterAnim: 0
     m_ExitAnim: 0

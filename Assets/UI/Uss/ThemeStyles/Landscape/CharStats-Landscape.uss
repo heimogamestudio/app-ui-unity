@@ -1,0 +1,11 @@
+.char-data__container {
+    height: 72%;
+    width: 33%;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    right: 1%;
+    bottom: 16%;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4040379037015584800&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_02');
+    top: 21%;
+}

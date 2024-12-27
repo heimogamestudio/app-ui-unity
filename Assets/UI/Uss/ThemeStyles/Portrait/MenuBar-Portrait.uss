@@ -1,0 +1,101 @@
+.menu__container {
+    flex-grow: 1;
+    position: absolute;
+    height: 13%;
+    justify-content: flex-start;
+    width: 100%;
+    bottom: 1%;
+    flex-direction: row;
+    transform-origin: top;
+}
+
+.menu__button-group {
+    display: flex;
+    opacity: 1;
+    background-color: rgba(191, 0, 255, 0);
+    position: absolute;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+    justify-content: space-around;
+    align-items: stretch;
+    top: 4%;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.menu__background {
+    opacity: 1;
+    position: absolute;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=4566532133591779066&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Main_menu_bg");
+    width: 120%;
+    height: 100%;
+    scale: 1 1.1;
+    transform-origin: top;
+    top: 6%;
+    left: -10%;
+    align-items: center;
+}
+
+.level-meter__template-container {
+    width: 27%;
+    height: 13%;
+    flex-basis: 25%;
+    top: 0.5%;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    left: 0;
+    position: absolute;
+}
+
+.menu__current-marker {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    justify-content: flex-start;
+    display: flex;
+    opacity: 1;
+    top: -20%;
+}
+
+.menu__marker-graphic {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-6397406315925729229&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Main_menu_selector");
+    rotate: 90deg;
+    width: 20%;
+    height: 63%;
+    scale: 1 3;
+    translate: 221% 55%;
+}
+
+.menu__marker-graphic {
+    translate: 180% 45%;
+    height: 100%;
+    max-height: 100%;
+    scale: 1.2 3.8;
+}
+
+.menu__safe-area-fill {
+    flex-grow: 1;
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    transform-origin: right;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    display: flex;
+    top: 100%;
+}
+
+.menu__spacer {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+    width: 100%;
+    display: none;
+}

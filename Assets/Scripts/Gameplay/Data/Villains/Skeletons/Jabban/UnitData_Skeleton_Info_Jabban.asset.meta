@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ccfab9270e58c11439c22ff6b39eb0f9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Villains/Skeletons/Jabban/UnitData_Skeleton_Info_Jabban.asset
+  uploadId: 714966

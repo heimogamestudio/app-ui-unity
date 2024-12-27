@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8968f816b0b445da941f88624e5f8e, type: 3}
+  m_Name: discussions
+  m_EditorClassIdentifier: 
+  title: Forum post
+  subTitle: Share your feedback and find more posts about UI Toolkit in Discussions
+  darkenBackground: 1
+  backgroundImage: {fileID: 21300000, guid: d6c891c9422fc42dbb5a5a41df3663cf, type: 3}
+  resourceURL: https://discussions.unity.com/t/the-ui-toolkit-sample-project-dragon-crashers-is-now-available-on-the-asset-store/893363
+  blockSize: {x: 1, y: 1}

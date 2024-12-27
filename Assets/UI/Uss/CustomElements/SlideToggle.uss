@@ -1,0 +1,102 @@
+.slide-toggle__input {
+    max-width: 30%;
+    overflow: visible;
+    max-height: 100%;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    opacity: 1;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7726495693756561115&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Hud_bg_02");
+    height: auto;
+    position: relative;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+    justify-content: center;
+    left: 30%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    align-items: flex-start;
+    margin-right: 2%;
+}
+
+.slide-toggle__input-knob {
+    height: 80%;
+    width: 45%;
+    background-color: rgb(233, 224, 200);
+    position: absolute;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    top: 15%;
+    transition-property: translate, background-color;
+    transition-duration: 0.5s, 0.5s;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3146684561752266830&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_06");
+    translate: 0 -5%;
+    scale: 1 1;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    display: flex;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.slide-toggle__input--checked {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-7726495693756561115&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Hud_bg_02");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.slide-toggle__input--checked > .slide-toggle__input-knob {
+    translate: 90% -5%;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+}
+
+.slide-toggle:focus .slide-toggle__input-knob {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 106, 166, 0);
+    border-right-color: rgba(0, 106, 166, 0);
+    border-top-color: rgba(0, 106, 166, 0);
+    border-bottom-color: rgba(0, 106, 166, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.slide-toggle__label {
+    font-size: 25px;
+    color: rgb(151, 129, 98);
+    -unity-text-align: middle-center;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B");
+    flex-basis: 36%;
+}
+
+.slide-toggle__state-label {
+    font-size: 24px;
+    color: rgb(151, 129, 98);
+    align-items: flex-start;
+    left: -100%;
+    right: auto;
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+    -unity-text-align: upper-right;
+    width: 85%;
+}

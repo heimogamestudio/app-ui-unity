@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="PauseScreen" src="project://database/Assets/UI/Uxml/PauseScreen.uxml?fileID=9197481963319205126&amp;guid=f910f0cedcaa5104daa6f49e54ef48ce&amp;type=3#PauseScreen" />
+    <ui:Template name="GameWinScreen" src="project://database/Assets/UI/Uxml/GameWinScreen.uxml?fileID=9197481963319205126&amp;guid=bd5a86368cf3f304db9a26b3f2555585&amp;type=3#GameWinScreen" />
+    <ui:Template name="GameLoseScreen" src="project://database/Assets/UI/Uxml/GameLoseScreen.uxml?fileID=9197481963319205126&amp;guid=40d28487be7919749bc1274f2fe2030a&amp;type=3#GameLoseScreen" />
+    <Style src="project://database/Assets/UI/Uss/Screens/GameScreen.uss?fileID=7433441132597879392&amp;guid=8746b9f036847ad45a0f843f9ac56092&amp;type=3#GameScreen" />
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Screens/PauseScreen.uss?fileID=7433441132597879392&amp;guid=5a2eb5b505d44f248bda8b0e86354e06&amp;type=3#PauseScreen" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <ui:VisualElement name="background__container" class="background__container cursor-a">
+        <ui:VisualElement name="background__graphic" class="background__graphic" style="-unity-background-scale-mode: scale-to-fit;" />
+        <ui:VisualElement name="background__letterbox-top" class="background__letterbox-top tileable--128px" style="background-color: rgb(0, 32, 55); -unity-background-image-tint-color: rgb(111, 111, 111);" />
+        <ui:VisualElement name="background__letterbox-bottom" class="background__letterbox-bottom tileable--128px" />
+    </ui:VisualElement>
+    <ui:VisualElement name="info__container" picking-mode="Ignore" class="info__container">
+        <ui:Label text="This is a small slice of the 2D demo, Dragon Crashers, available on the Asset Store" display-tooltip-when-elided="true" name="info__label" enable-rich-text="false" picking-mode="Ignore" class="info__label" />
+    </ui:VisualElement>
+    <ui:VisualElement name="pause__button-container" picking-mode="Ignore" class="pause__button-container">
+        <ui:Button display-tooltip-when-elided="true" name="pause__button" class="pause__button" style="cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;); transition-duration: 0.25s;">
+            <ui:VisualElement name="pause__button-graphic" picking-mode="Ignore" class="pause__button-graphic" style="background-color: rgba(52, 73, 94, 0);" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement name="game-char__container" picking-mode="Ignore" class="game-char__container">
+        <ui:VisualElement name="healing-potion__space" class="healing-potion__space" style="width: 200px; height: 200px; left: 1%; top: 7%; margin-right: 40px; cursor: url(&quot;project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&amp;guid=f3c815d95da3a483385620d7bd8fc545&amp;type=3#Cursor_B&quot;);">
+            <ui:VisualElement name="healing-potion__image" class="healing-potion__image potion--active" />
+            <ui:Label text="3" display-tooltip-when-elided="true" name="healing-potion__count" picking-mode="Ignore" class="healing-potion__count" style="width: 90px; bottom: -16px; position: absolute;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="timer__container" picking-mode="Ignore" class="timer__container">
+        <ui:VisualElement name="game-timer__background" picking-mode="Ignore" class="timer__background" />
+        <ui:Label text="99:59" display-tooltip-when-elided="true" name="game-timer__label" picking-mode="Ignore" class="timer__label" />
+    </ui:VisualElement>
+    <ui:VisualElement name="enemy__container" picking-mode="Ignore" class="enemy__container" />
+    <ui:Instance template="PauseScreen" name="PauseScreen" picking-mode="Ignore" class="pause__template-container" />
+    <ui:Instance template="GameWinScreen" name="GameWinScreen" picking-mode="Ignore" class="screen__anchor--top-left game-win__template-container" />
+    <ui:Instance template="GameLoseScreen" name="GameLoseScreen" picking-mode="Ignore" class="screen__anchor--top-left game-lose__template-container" />
+    <ui:VisualElement name="healing-potion__container" picking-mode="Ignore" class="healing-potion__container">
+        <ui:VisualElement name="healing-potion__drag-area" picking-mode="Ignore" style="height: 100%; width: 55%; position: absolute; background-color: rgba(89, 83, 83, 0); top: 0; left: 0;">
+            <ui:VisualElement name="healing-potion__slot1" class="healing-potion__slot healing-potion__slot-1" />
+            <ui:VisualElement name="healing-potion__slot2" class="healing-potion__slot healing-potion__slot-2" />
+            <ui:VisualElement name="healing-potion__slot3" class="healing-potion__slot healing-potion__slot-3" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="healing-potion__screen" picking-mode="Ignore" style="flex-grow: 1; width: 100%; height: 100%; max-width: 100%; max-height: 100%; top: 0; position: absolute;" />
+    <engine:VisualElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" template="LogWindow" name="debug-log__container" picking-mode="Ignore" style="position: absolute; width: 100%; height: 22%; top: 5%; display: none;">
+        <engine:VisualElement name="debug-log__background" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.8);">
+            <engine:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis enim nec neque imperdiet pellentesque. Phasellus risus sapien, convallis at viverra mattis, vulputate in ligula. Mauris vitae bibendum elit. Maecenas egestas ultrices tincidunt. Nulla facilisi. Aenean scelerisque aliquam tincidunt. Praesent egestas massa rhoncus velit consectetur facilisis. Proin ut tristique enim. Nulla cursus scelerisque ullamcorper. Aenean lobortis dapibus scelerisque. Duis vel dui feugiat, sagittis ipsum sed, lacinia ipsum. Ut ornare scelerisque nulla, eu eleifend magna tempus ac. Pellentesque id quam rhoncus urna fermentum tempus at eu ante." name="debug-log__label" picking-mode="Ignore" style="flex-grow: 1; color: rgb(212, 212, 212); white-space: normal; font-size: 26px;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</ui:UXML>

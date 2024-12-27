@@ -1,0 +1,22 @@
+.settings__container {
+    width: 62%;
+    height: 85%;
+    background-color: rgba(20, 24, 255, 0);
+    display: flex;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4040379037015584800&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#Window_bg_02');
+    padding-bottom: 0;
+    opacity: 1;
+    transition-duration: 0.25s;
+}
+
+.settings__body-container {
+    height: 89%;
+    width: 100%;
+    background-color: rgba(154, 154, 154, 0);
+    flex-direction: row;
+    align-items: flex-start;
+}

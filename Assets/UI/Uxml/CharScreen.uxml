@@ -1,0 +1,85 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="CharDataPanel" src="project://database/Assets/UI/Uxml/CharStatsPanel.uxml?fileID=9197481963319205126&amp;guid=91d7824101a5ff44aa586c34fdbd49f7&amp;type=3#CharStatsPanel" />
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Text.uss?fileID=7433441132597879392&amp;guid=b05ff73889e4f4eb087e35c5f3d38284&amp;type=3#Text" />
+    <Style src="project://database/Assets/UI/Uss/Base/Colors.uss?fileID=7433441132597879392&amp;guid=d7f86ff563ba646c1aa0ede35fb959c4&amp;type=3#Colors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Buttons.uss?fileID=7433441132597879392&amp;guid=1677b2c0e41604415b56804bf6a04fd3&amp;type=3#Buttons" />
+    <Style src="project://database/Assets/UI/Uss/Screens/CharScreen.uss?fileID=7433441132597879392&amp;guid=9c0dd22ea80abf041b8a62ec3ab2daa0&amp;type=3#CharScreen" />
+    <Style src="project://database/Assets/UI/Uss/Screens/CharStats.uss?fileID=7433441132597879392&amp;guid=d6bbf61c44c882d44b0598afa867ae8c&amp;type=3#CharStats" />
+    <Style src="project://database/Assets/UI/Uss/Base/Sliders.uss?fileID=7433441132597879392&amp;guid=4367864dd329043c0bbcdd5f56c172e7&amp;type=3#Sliders" />
+    <ui:VisualElement name="char__screen" class="screen__anchor--center" style="background-image: none; opacity: 1;">
+        <ui:VisualElement name="char__main-container" class="char__main-container">
+            <ui:GroupBox name="char__header" class="header__container">
+                <ui:VisualElement name="char__panel-banner" class="header__panel-banner" style="display: flex;">
+                    <ui:Label text="Sir Jarek" display-tooltip-when-elided="true" name="char__label" class="text__shadow--large color__text--white alignment--center text__align--middle-center text__size--large" />
+                </ui:VisualElement>
+                <ui:VisualElement name="char__power-panel" class="header__power-panel" style="padding-right: 0; width: 50%; flex-direction: row;">
+                    <ui:VisualElement name="char__power-icon" class="header__power-icon" style="top: 0; left: 0; height: 75px; width: 75px; align-items: flex-end; position: relative; max-height: 75px; max-width: 75px; min-height: 75px; min-width: 75px;" />
+                    <ui:Label text="2565" display-tooltip-when-elided="true" name="char__power-label" class="header__panel-text-med" style="-unity-text-align: middle-left; position: relative; padding-left: 0; left: 0; top: 0; text-shadow: 4px 4px 4px rgb(14, 20, 26); -unity-font-style: normal; margin-left: 9px; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:GroupBox>
+            <ui:GroupBox name="char__footer" class="footer__container">
+                <ui:Button text="Auto-equip" display-tooltip-when-elided="true" name="char__auto-equip-button" class="button-gray text__size--small footer__equip-button">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6315128545861632)" />
+                    </Bindings>
+                </ui:Button>
+                <ui:VisualElement name="char__level-up-panel" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgba(44, 62, 80, 0.52); bottom: -3%; align-items: center; justify-content: center; width: 37%; height: 80%; position: relative; flex-basis: 38%; margin-right: 2%; margin-left: 2%;">
+                    <ui:Label text="&#10;" display-tooltip-when-elided="true" name="char-level-up-group" style="width: 94%; height: 50%; position: absolute; top: 0; flex-direction: row;">
+                        <ui:Label text="&#10;" display-tooltip-when-elided="true" name="char-level-up-text" class="footer__level-up-text">
+                            <ui:VisualElement name="char__footer-left" style="flex-grow: 1; height: 100%; width: 60%; position: absolute; left: 0; flex-direction: row; justify-content: flex-end;">
+                                <ui:VisualElement name="char-level-up-potion-icon" class="footer__potion-icon" />
+                                <ui:Label text="9999" display-tooltip-when-elided="true" name="char__potion-count" class="footer__potion-count" />
+                            </ui:VisualElement>
+                            <ui:Label text="/250" display-tooltip-when-elided="true" name="char__potion-to-advance" class="color__text--white footer__potion-to-advance" />
+                        </ui:Label>
+                    </ui:Label>
+                    <ui:Button text="Level up&#10;" display-tooltip-when-elided="true" name="char__level-up-button" class="footer__level-up-button--inactive text__size--large color__text--white footer__level-up-button button-orange" style="position: absolute; width: 100%; bottom: -17%; top: initial; height: 63%; -unity-text-align: upper-center;">
+                        <ui:Label text="Level up" display-tooltip-when-elided="true" name="char__level-up-button-label" picking-mode="Ignore" style="display: none;" />
+                        <ui:VisualElement name="char__level-up-button-vfx" picking-mode="Ignore" tabindex="0" class="level-up-button-vfx" style="background-color: rgba(243, 243, 243, 0); background-image: url(&quot;project://database/Assets/UI/Textures/RenderTextures/VFXRenderTexture.renderTexture?fileID=8400000&amp;guid=9ee6b38a810bc1c47bea7f1c5017238b&amp;type=2#VFXRenderTexture&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6315225115516928)" />
+                        </Bindings>
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Button text="Unequip" display-tooltip-when-elided="true" name="char__unequip-button" class="button-gray text__size--small equip-button footer__equip-button">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:dade14b2149874cc188fc560cf8f29d8" entry="Id(6315248591036416)" />
+                    </Bindings>
+                </ui:Button>
+            </ui:GroupBox>
+            <ui:VisualElement name="char-inventory__slot-container" class="char-inventory__container">
+                <ui:VisualElement name="char-inventory__slot1-group" style="position: absolute; left: 0; top: 0; width: 150px; height: 150px; align-items: center; justify-content: center;">
+                    <ui:Button display-tooltip-when-elided="true" name="char-inventory__slot1" class="inventory__slot-button" style="display: flex; width: 95%; height: 95%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+                        <ui:VisualElement name="char-inventory__slot1-add" picking-mode="Ignore" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1420285559768495459&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_add&quot;); width: 33%; height: 33%; position: absolute;" />
+                        <ui:VisualElement name="char-inventory__slot1-gear" picking-mode="Ignore" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6124285065676005435&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bg_empty_gear_slot&quot;); width: 100%; height: 100%; -unity-background-scale-mode: scale-to-fit; position: absolute; align-items: center; justify-content: center; display: flex;" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-inventory__slot2-group" style="position: absolute; left: 0; top: 58%; width: 150px; height: 150px; align-items: center; justify-content: center;">
+                    <ui:Button display-tooltip-when-elided="true" name="char-inventory__slot2" class="inventory__slot-button" style="display: flex; width: 95%; height: 95%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+                        <ui:VisualElement name="char-inventory__slot2-add" picking-mode="Ignore" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1420285559768495459&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_add&quot;); width: 33%; height: 33%; position: absolute;" />
+                        <ui:VisualElement name="char-inventory__slot2-gear" picking-mode="Ignore" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6124285065676005435&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bg_empty_gear_slot&quot;); width: 100%; height: 100%; -unity-background-scale-mode: scale-to-fit; position: absolute; align-items: center; justify-content: center; display: flex;" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-inventory__slot3-group" style="position: absolute; left: 84%; top: 58%; width: 150px; height: 150px; align-items: center; justify-content: center;">
+                    <ui:Button display-tooltip-when-elided="true" name="char-inventory__slot3" class="inventory__slot-button" style="display: flex; width: 95%; height: 95%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+                        <ui:VisualElement name="char-inventory__slot3-add" picking-mode="Ignore" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1420285559768495459&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_add&quot;); width: 33%; height: 33%; position: absolute;" />
+                        <ui:VisualElement name="char-inventory__slot3-gear" picking-mode="Ignore" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6124285065676005435&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bg_empty_gear_slot&quot;); width: 100%; height: 100%; -unity-background-scale-mode: scale-to-fit; position: absolute; align-items: center; justify-content: center; display: flex;" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="char-inventory__slot4-group" style="position: absolute; left: 84%; top: 0; width: 150px; height: 150px; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill;">
+                    <ui:Button display-tooltip-when-elided="true" name="char-inventory__slot4" class="inventory__slot-button" style="display: flex; width: 95%; height: 95%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+                        <ui:VisualElement name="char-inventory__slot4-add" picking-mode="Ignore" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1420285559768495459&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_add&quot;); width: 33%; height: 33%; position: absolute;" />
+                        <ui:VisualElement name="char-inventory__slot4-gear" picking-mode="Ignore" style="background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6124285065676005435&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bg_empty_gear_slot&quot;); width: 100%; height: 100%; -unity-background-scale-mode: scale-to-fit; position: absolute; align-items: center; justify-content: center; display: flex;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="char__nav-button-container" class="nav-button__container">
+                <ui:Button text="&#10;" display-tooltip-when-elided="true" name="char__last-button" class="char__next-last-button" style="left: 0; top: 0; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3631226721192414999&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bt_07&quot;); background-color: rgba(188, 188, 188, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                <ui:Button text="&#10;" display-tooltip-when-elided="true" name="char__next-button" class="char__next-last-button" style="top: 0; background-color: rgba(188, 188, 188, 0); background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3631226721192414999&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#bt_07&quot;); scale: -1 1; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; right: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="CharDataPanel" name="CharStatsWindow" picking-mode="Ignore" style="width: 100%; height: 100%;" />
+</ui:UXML>

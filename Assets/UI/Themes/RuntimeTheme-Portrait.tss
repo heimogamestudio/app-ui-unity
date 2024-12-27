@@ -1,0 +1,40 @@
+@import url("RuntimeTheme-Default.tss");
+
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/MenuBar-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/HomeScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/CharScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/CharStats-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/InfoScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/ShopScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/SettingsScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/MailScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/InventoryScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/GameScreen-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/MainMenu-Portrait.uss");
+@import url("/Assets/UI/Uss/ThemeStyles/Portrait/PopUpText-Portrait.uss");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VisualElement {}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 79245ba622d29954892a557cc7d57eeb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/Gameplay/Data/Villains/Dragon/UnitData_Dragon_Ability_SpecialAttack.asset
+  uploadId: 714966

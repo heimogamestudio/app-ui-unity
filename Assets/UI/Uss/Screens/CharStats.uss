@@ -1,0 +1,125 @@
+.char-stats__header {
+    flex-grow: 0;
+    flex-basis: 17%;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    justify-content: center;
+}
+
+.char-data__tabs {
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 94%;
+    height: 11%;
+    display: flex;
+    transform-origin: bottom;
+}
+
+.char-data__label {
+    font-size: 40px;
+    color: rgb(118, 80, 39);
+}
+
+.chartab {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: rgb(240, 240, 240);
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1610000651339678439&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#tab_window_02_unselected");
+    cursor: url("project://database/Assets/UI/Textures/Cursors/Cursor_B.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#Cursor_B") 10 11;
+}
+
+.selected-chartab {
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-4710001525770636427&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#tab_window_02_selected");
+}
+
+.unselected-charcontent {
+    display: none;
+}
+
+.char-data__content {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 3%;
+    top: 16%;
+    width: 95%;
+    height: 81%;
+    display: flex;
+    transform-origin: top;
+}
+
+.char-data__stats-charcontent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+
+.char-stats__value {
+    font-size: 55px;
+    margin-left: 25px;
+    color: rgb(157, 127, 91);
+}
+
+.char-stats__class-label {
+    font-size: 37px;
+    color: rgb(157, 127, 91);
+    top: -3%;
+}
+
+.char-stats__class-group {
+    flex-basis: 23%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.char-stats__icon {
+    width: 65px;
+    height: 65px;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2079728134226908446&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#icon_stat_health");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.char-stats__crest {
+    width: 125px;
+    height: 144px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-474826903757097683&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#type_crest_bg");
+    display: flex;
+}
+
+.char-data__skill-next-last-button {
+    width: 70px;
+    height: 70px;
+    left: 8%;
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=3631226721192414999&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#bt_07");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.char-data__skill-next-last-button:hover {
+    -unity-background-image-tint-color: rgb(230, 126, 34);
+}
+
+.char-data__skill-next-last-button:active {
+    -unity-background-image-tint-color: rgb(240, 240, 240);
+}
+
+#char-bio__scrollview #unity-slider {
+    left: -59%;
+}
+
+#char-bio__scrollview #unity-tracker {
+    left: 26%;
+    -unity-background-image-tint-color: rgb(192, 177, 138);
+    background-image: url("project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-8408378496309066828&guid=68de98d899585b7469e0fb40a0fcbc56&type=3#scrollbar_bg");
+}

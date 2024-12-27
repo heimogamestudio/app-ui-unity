@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f33a7a5730fde7944a643117e4aeb906
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Animations/Characters/AnimClips/Shared_Bipeds/Anim_Character_Bipedal_GetHit.anim
+  uploadId: 714966

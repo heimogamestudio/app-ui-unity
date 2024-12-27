@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f75a0776f062a4f74bff5156c8a06e29
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/AddressableAssetsData/AssetGroups/Schemas/Localization-String-Tables-French
+    (fr)_BundledAssetGroupSchema.asset
+  uploadId: 714966

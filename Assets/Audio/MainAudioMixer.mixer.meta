@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac794248e9b1e8a4195696f279f2d1cc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 24100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Audio/MainAudioMixer.mixer
+  uploadId: 714966

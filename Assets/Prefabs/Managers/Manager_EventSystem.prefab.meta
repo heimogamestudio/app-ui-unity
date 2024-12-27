@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 727aca6df0c4ab94eb47a6a27f920338
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Prefabs/Managers/Manager_EventSystem.prefab
+  uploadId: 714966

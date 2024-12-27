@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ShopItem" src="project://database/Assets/UI/Uxml/Resources/ShopItem.uxml?fileID=9197481963319205126&amp;guid=9d9fcbe54fa80084d90732f794161a99&amp;type=3#ShopItem" />
+    <Style src="project://database/Assets/UI/Uss/Base/Cursors.uss?fileID=7433441132597879392&amp;guid=2b435452e5e0f44188f32976e963cac3&amp;type=3#Cursors" />
+    <Style src="project://database/Assets/UI/Uss/Base/Common.uss?fileID=7433441132597879392&amp;guid=463d710b9ab873a4e98850c5473d5fe8&amp;type=3#Common" />
+    <Style src="project://database/Assets/UI/Uss/Base/Colors.uss?fileID=7433441132597879392&amp;guid=d7f86ff563ba646c1aa0ede35fb959c4&amp;type=3#Colors" />
+    <Style src="project://database/Assets/UI/Uss/Screens/ShopItem.uss?fileID=7433441132597879392&amp;guid=9887be294c5e1014ebb8f4c6e22161d5&amp;type=3#ShopItem" />
+    <Style src="project://database/Assets/UI/Uss/Base/SlidersHorizontal.uss?fileID=7433441132597879392&amp;guid=b70346ab9f72e4db4ab4ec16f1b1c16f&amp;type=3#SlidersHorizontal" />
+    <Style src="project://database/Assets/UI/Uss/Screens/ShopScreen.uss?fileID=7433441132597879392&amp;guid=659c7446ac48d504184624131b99a9db&amp;type=3#ShopScreen" />
+
+    <ui:GroupBox name="shop__screen" class="screen__anchor--center">
+        <ui:GroupBox name="shop__container" picking-mode="Ignore" class="shop__container">
+            <ui:VisualElement name="shop__content-container" picking-mode="Ignore" class="shop__content-container">
+                <ui:VisualElement name="shop__content" picking-mode="Ignore" class="shop-content cursor-a">
+                    <ui:ScrollView mode="Horizontal" horizontal-scroller-visibility="Auto" name="shop__content-scrollview" vertical-scroller-visibility="Hidden" picking-mode="Ignore" touch-scroll-type="Elastic" class="shop-screen-scroll-view" style="align-items: stretch; padding-left: 3%; padding-right: 3%; flex-direction: column; padding-top: 3%; position: absolute;">
+                        <ui:Instance template="ShopItem" name="ShopItem" style="width: 400px; height: 600px;" />
+                        <ui:Instance template="ShopItem" name="ShopItem" style="width: 400px; height: 600px;" />
+                        <ui:Instance template="ShopItem" name="ShopItem" style="width: 400px; height: 600px;" />
+                        <ui:Instance template="ShopItem" name="ShopItem" style="width: 400px; height: 600px;" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="shop__tab-container" picking-mode="Ignore" class="shop-screen-tabs cursor-b">
+                <ui:VisualElement name="shop-gold-shoptab" class="shoptab selected-shoptab" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="shop-gold-icon" picking-mode="Ignore" style="flex-grow: 1; position: absolute; width: 100px; height: 100px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=6161000958321840084&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_soft_currency&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:Label text="GOLD" display-tooltip-when-elided="true" name="shop-gold-label" style="display: none;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="shop-gem-shoptab" class="shoptab" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="shop-gem-icon" picking-mode="Ignore" style="flex-grow: 1; position: absolute; width: 100px; height: 100px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=7429233924804342823&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_hard_currency&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:Label text="GEM" display-tooltip-when-elided="true" name="shop-gem-label" style="display: none;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="shop-potion-shoptab" class="shoptab" style="background-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="shop-potion-icon" picking-mode="Ignore" style="flex-grow: 1; position: absolute; width: 100px; height: 100px; background-image: url(&quot;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=121253912005250350&amp;guid=68de98d899585b7469e0fb40a0fcbc56&amp;type=3#icon_potions&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:Label text="POTION" display-tooltip-when-elided="true" name="shop-potion-label" style="display: none;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

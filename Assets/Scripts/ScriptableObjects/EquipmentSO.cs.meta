@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fec4181eadf16944d9913a0a30b0e0a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 231178
+  packageName: Dragon Crashers - UI Toolkit Sample project
+  packageVersion: 1.692
+  assetPath: Assets/Scripts/ScriptableObjects/EquipmentSO.cs
+  uploadId: 714966
